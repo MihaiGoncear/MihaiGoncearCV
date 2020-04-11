@@ -76,18 +76,6 @@ a {
     width: auto;
 }
 
-.dl1 {
-    background-color: rgb(243, 223, 194);
-}
-
-.dl2 {
-    background-color: rgb(194, 243, 196) ;
-}
-
-.dl3 {
-    background-color: rgb(236, 243, 194);
-}
-
 .table2 {
     width: 100%;
     margin-left: 20px;
@@ -138,6 +126,7 @@ dl {
     width: 100%;
     padding-left: 26px;
     display: table-row;
+    background-color: white;
     dt, dd {
     display: table-cell;
     padding-bottom: 20px;
@@ -152,20 +141,23 @@ dd {
 .table1 {
     width: 600px;
     tr {
+       
         & {
 
             :nth-child(1){
+                width: 30%;
                 text-align: left;
                 font-weight: bold;
             }
             :nth-child(2) {
+                width: 55%;
                 text-align: start;
-                padding: 0 10px;
                 text-decoration: underline;
                 font-style: italic;
             }   
             :nth-child(3) {
-                text-align: right;
+                width: 15%;
+                text-align: left;
             }
         }    
     }
