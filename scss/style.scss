@@ -150,22 +150,22 @@ dd {
     }
 
 .table1 {
+    width: 600px;
     tr {
         & {
+
             :nth-child(1){
-            text-align: left;
-            font-weight: bold;
+                text-align: left;
+                font-weight: bold;
             }
             :nth-child(2) {
+                text-align: start;
                 padding: 0 10px;
                 text-decoration: underline;
                 font-style: italic;
             }   
             :nth-child(3) {
-                text-align: center;
-                border: black solid 1px;
-                border-radius: 25px;
-                padding: 0 5px;
+                text-align: right;
             }
         }    
     }
@@ -173,10 +173,12 @@ dd {
 
 .table-container {
     border-bottom: black solid 1px;
+    width: 100%;
 }
 
 .info-container {
     border-bottom: black dotted 5px;
+   
 }
 
     
