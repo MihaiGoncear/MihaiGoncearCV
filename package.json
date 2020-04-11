@@ -1,0 +1,24 @@
+{
+  "name": "cvmihaigoncear",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass scss -o css",
+    "watch-sass": "node-sass --watch scss -o css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihaiGoncear/MihaiGoncearCV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihaiGoncear/MihaiGoncearCV/issues"
+  },
+  "homepage": "https://github.com/MihaiGoncear/MihaiGoncearCV#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

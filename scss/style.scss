@@ -1,0 +1,160 @@
+@import "reset";
+
+html {
+    background: url(//css-tricks.com/examples/OnePageResume/images/noise.jpg)
+}
+
+#full-container {
+    display: flex;
+    flex-flow: row-reverse;
+    min-width: 310px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    background-color: rgb(204, 222, 255);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+    border-bottom-style: solid;
+    color: rgb(255, 0, 0);
+    }
+}
+
+.section1 {
+    display: block;
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px;
+    background-color: rgb(141, 175, 238);
+    right: 10px;
+}
+
+.span1 {
+    color: rgb(56, 56, 56);
+    border-bottom: 2px dotted  rgb(104, 104, 104);
+}
+
+.section2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    display: block;
+    margin-right: 40%;
+    width: auto;
+}
+
+.dl1 {
+    background-color: rgb(243, 223, 194);
+}
+
+.dl2 {
+    background-color: rgb(194, 243, 196) ;
+}
+
+
+.table2 {
+    width: 100%;
+    h3 {
+    margin-top: 50px;
+    text-align: center;
+    }
+    tr {
+        & {
+            :nth-child(1) {
+                text-align: center;
+            }
+            :nth-child(2) {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+    
+dt {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 26px;
+    width: 200px;
+    border-right: 1px solid #999;
+}
+
+dl {
+    width: 100%;
+    padding-left: 26px;
+    display: table-row;
+    dt, dd {
+    display: table-cell;
+    padding-bottom: 20px;
+    }
+}
+
+dd {
+    width: 100%;
+    padding-left: 26px;
+    }
+
+.table1 {
+    tr {
+        & {
+            :nth-child(1){
+            text-align: left;
+            font-weight: bold;
+            }
+            :nth-child(2) {
+                padding: 0 10px;
+                text-decoration: underline;
+                font-style: italic;
+            }   
+            :nth-child(3) {
+                text-align: center;
+                border: black solid 1px;
+                border-radius: 25px;
+                padding: 0 5px;
+            }
+        }    
+    }
+}
+
+.table-container {
+    border-bottom: black solid 1px;
+}
+
+.info-container {
+    border-bottom: black dotted 5px;
+}
+
+img {
+    float: right;
+    padding: 10px;
+    border: black;
+    background: #fff;
+    margin: 0 30px;
+    transform: rotate(-4deg);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    width: 25%;
+    max-width: 220px
+}
+    
+    
