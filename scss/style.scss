@@ -1,10 +1,12 @@
 @import "reset";
 
+@import "mixin";
+
+@include isDesktop {
 #full-container {
     display: flex;
     flex-flow: row-reverse;
     min-width: 310px;
-    font-size: 16px;
     line-height: 24px;
     color: #000;
     background-color: rgb(204, 222, 255);
@@ -18,13 +20,15 @@
     align-items: center;
     background-color: rgb(152, 186, 248);
 
-    h1 {
+    .h1 {
         padding-left: 10%;
+        font-size: 3vw;
+        line-height: 100%;
     }
     img {
         background: #fff;
         box-shadow: 5px 5px 0 0  rgba(0, 0, 0, .3);
-        width: 30%;
+        width: 25%;
         max-width: 220px;
         margin: 10px;
     }
@@ -38,10 +42,6 @@ h1 {
     line-height: 50px;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 6px;
-}
 
 a {
     text-decoration: none;
@@ -68,19 +68,24 @@ a {
     }
 }
 
+.objective {
+    font-size: 1.3vw;
+}
+
 .section2 {
-    margin-top: 10px;
-    padding-top: 10px;
     display: block;
     margin-right: 40%;
-    width: auto;
+    width: 100%;
+    margin-left: 1%;
 }
 
 .table2 {
     width: 100%;
     margin-left: 20px;
-    font-size: 20px;
+    
     tr {
+        font-size: 1.3vw;
+
         & {
             :nth-child(1) {
                 text-align: center;
@@ -100,6 +105,7 @@ a {
     margin-left: 20px;
     font-size: 20px;
     tr {
+        font-size: 1.3vw;
         & {
             :nth-child(1){
                 text-align: center;
@@ -115,21 +121,20 @@ a {
     
 dt {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.75vw;
     text-align: right;
-    padding-right: 26px;
-    width: 200px;
+    padding-right: 1%;
+    width: 20%;
     border-right: 1px solid #999;
 }
 
 dl {
     width: 100%;
-    padding-left: 26px;
     display: table-row;
     background-color: white;
     dt, dd {
     display: table-cell;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
     }
 }
 
@@ -139,22 +144,27 @@ dd {
     }
 
 .table1 {
-    width: 600px;
+    width: 100%;
+
     tr {
+        font-size: 1.3vw;
+        padding: 5% 0;
        
         & {
 
-            :nth-child(1){
-                width: 30%;
+            :nth-child(1) {
+                width: 25%;
                 text-align: left;
                 font-weight: bold;
             }
+
             :nth-child(2) {
-                width: 55%;
+                width: 60%;
                 text-align: start;
                 text-decoration: underline;
                 font-style: italic;
-            }   
+            }
+
             :nth-child(3) {
                 width: 15%;
                 text-align: left;
@@ -166,6 +176,13 @@ dd {
 .table-container {
     border-bottom: black solid 1px;
     width: 100%;
+    h2,h3 {
+        font-size: 1.5vw;
+    }
+
+    h3 {
+        font-weight: lighter;
+    }
 }
 
 .info-container {
@@ -173,5 +190,16 @@ dd {
    
 }
 
-    
-    
+}
+
+@include isTelephone {
+    #full-container {
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 310px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        background-color: rgb(204, 222, 255);
+    }
+}
