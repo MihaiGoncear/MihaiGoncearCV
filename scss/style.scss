@@ -2,46 +2,17 @@
 
 @import "mixin";
 
-@include isDesktop {
 #full-container {
     display: flex;
-    flex-flow: row-reverse;
-    min-width: 310px;
     line-height: 24px;
-    color: #000;
     background-color: rgb(204, 222, 255);
-}
-
-.name {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    align-items: center;
-    background-color: rgb(152, 186, 248);
-
-    .h1 {
-        padding-left: 10%;
-        font-size: 3vw;
-        line-height: 100%;
-    }
-    img {
-        background: #fff;
-        box-shadow: 5px 5px 0 0  rgba(0, 0, 0, .3);
-        width: 30%;
-        max-width: 220px;
-        margin: 10px;
-    }
+    color: #000;
 }
 
 h1 {
-    margin-left: 20%;
-    font-size: 40px;
     font-weight: bold;
     letter-spacing: -2px;
-    line-height: 50px;
 }
-
 
 a {
     text-decoration: none;
@@ -54,49 +25,53 @@ a {
 }
 
 .section1 {
-    display: block;
-    position: fixed;
-    width: 35%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
     background-color: rgb(141, 175, 238);
-    right: 10px;
-
+    
     h2 {
         text-align: center;
     }
 }
 
 .objective {
-    font-size: 1.3vw;
+    text-align: justify;
 }
 
 .section2 {
-    display: block;
-    margin-right: 40%;
     width: 100%;
-    margin-left: 1%;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: rgb(152, 186, 248);
+
+    .h1 {
+        line-height: 100%;
+    }
+
+    img {
+        background: #fff;
+        box-shadow: 5px 5px 0 0  rgba(0, 0, 0, .3);
+        width: 30%;
+        max-width: 220px;
+        margin: 10px;
+    }
 }
 
 .table2 {
     width: 100%;
-    margin-left: 20px;
-    
     tr {
-        font-size: 1.3vw;
-        line-height: 1vw;
-
         td {
-            padding: 2% 0;
-        }
-
-        & {
-            :nth-child(1) {
-                text-align: center;
-            }
-            :nth-child(2) {
-                padding-left: 5px;
+            & {
+                :nth-child(1) {
+                    text-align: center;
+                }
+                :nth-child(2) {
+                    padding-left: 5px;
+                }
             }
         }
     }
@@ -107,33 +82,25 @@ a {
 }
 
 .table3 {
-    margin-left: 20px;
-    font-size: 20px;
     tr {
-        font-size: 1.3vw;
-        
         td {
-            padding: 2% 0;
-        }
-
-        & {
-            :nth-child(1){
-                text-align: center;
-                font-weight: bold;
-            }
-            :nth-child(2){
-                padding-left: 5px;
-                
+            & {
+                :nth-child(1){
+                    text-align: center;
+                    font-weight: bold;
+                }
+                :nth-child(2){
+                    padding-left: 5px;
+                    
+                }
             }
         }
     }
 }
-    
+
 dt {
     font-weight: bold;
-    font-size: 1.75vw;
     text-align: right;
-    padding-right: 1%;
     width: 20%;
     border-right: 1px solid #999;
 }
@@ -150,45 +117,36 @@ dl {
 
 dd {
     width: 100%;
-    padding-left: 26px;
-    }
+}
 
 .table1 {
     width: 100%;
-
     tr {
-        font-size: 1.3vw;
         padding: 5% 0;
-       
-        & {
 
+        & {
             :nth-child(1) {
                 width: 25%;
                 text-align: left;
                 font-weight: bold;
             }
-
             :nth-child(2) {
                 width: 60%;
                 text-align: start;
                 text-decoration: underline;
                 font-style: italic;
             }
-
             :nth-child(3) {
                 width: 15%;
                 text-align: left;
             }
-        }    
+       }
     }
 }
 
 .table-container {
     border-bottom: black solid 1px;
     width: 100%;
-    h2,h3 {
-        font-size: 1.5vw;
-    }
 
     h3 {
         font-weight: lighter;
@@ -199,85 +157,130 @@ dd {
     border-bottom: black dotted 5px; 
 }
 
+@include isDesktop {
+    #full-container {
+        flex-flow: row-reverse;
+        min-width: 310px;   
+    }
+
+    .h1 { 
+        font-size: 3vw;
+        padding-left: 10%;
+    }
+
+    h1 {
+        margin-left: 20%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .section1 {
+        display: block;
+        position: fixed;
+        width: 35%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        right: 10px;
+    }
+
+    .objective {
+        font-size: 1.3vw;
+    }
+
+    .section2 {
+        display: block;
+        margin: 0 40% 0 1%;
+    }
+
+    .table2 {
+        margin-left: 20px;
+        
+        tr {
+            font-size: 1.3vw;
+            line-height: 1vw;
+
+            td {
+                padding: 2% 0;
+            }
+        }
+    }
+
+    .table3 {
+        margin-left: 20px;
+        font-size: 20px;
+        tr {
+            font-size: 1.3vw;
+            
+            td {
+                padding: 2% 0;
+            }
+        }
+    }
+        
+    dt {
+        font-size: 1.75vw;
+        padding-right: 1%;
+    }
+
+    dd {
+        padding-left: 26px;
+        }
+
+    .table1 {
+        tr {
+            font-size: 1.3vw;   
+        }
+    }
+
+    .table-container {
+
+        h2,h3 {
+            font-size: 1.5vw;
+        }
+    }
 }
 
 @include isTelephone {
+    
     #full-container {
-        display: flex;
         flex-flow: column wrap;
-        line-height: 24px;
-        color: #000;
-        background-color: rgb(204, 222, 255);
     }
 
     h1 {
         text-align: center;
-        font-weight: bold;
-        letter-spacing: -2px;
-        padding: 3% 0;
-        
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    
-        &:hover {
-        border-bottom-style: solid;
-        color: rgb(255, 0, 0);
-        }
+        padding: 3% 0;   
     }
 
     .section1 {
         margin: 0 2%;
         width: 100%;
-        background-color: rgb(141, 175, 238);
-        h2 {
-            text-align: center;
-        }
     }
 
     .section2 {
         margin: 0 2%;
-        width: 100%;
     }
 
     .objective {
         font-size: 3.5vw;
         padding: 3%;
-        text-align: justify;
         line-height: 4vw;
     }
 
     .name {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid black;
-        align-items: center;
-        background-color: rgb(152, 186, 248);
     
         .h1 {
             padding-left: 10%;
             font-size: 8vw;
-            line-height: 100%;
             display: flex;
             justify-content: center;
             flex-flow: column wrap;
             align-content: center;
             padding-left: 20%;
         }
-        img {
-            background: #fff;
-            box-shadow: 5px 5px 0 0  rgba(0, 0, 0, .3);
-            width: 30%;
-            max-width: 220px;
-            margin: 10px;
-        }
     }
 
     .table2 {
-        width: 100%;
         padding-left: 3%;
         
         tr {
@@ -288,17 +291,9 @@ dd {
     
             & {
                 :nth-child(1) {
-                    text-align: center;
                     line-height: 5.5vw;
                 }
-                :nth-child(2) {
-                    padding-left: 5px;
-                }
             }
-        }
-        .span1 {
-            color: rgb(56, 56, 56);
-            border-bottom: 2px dotted  rgb(104, 104, 104);
         }
     }
 
@@ -311,93 +306,41 @@ dd {
             td {
                 padding: 2vw 0;
             }
-    
-            & {
-                :nth-child(1){
-                    text-align: center;
-                    font-weight: bold;
-                }
-                :nth-child(2){
-                    padding-left: 5px;
-                    
-                }
-            }
         }
     }
 
     dt {
-        font-weight: bold;
         font-size: 4vw;
-        text-align: right;
-        width: 20%;
-        border-right: 1px solid #999;
         line-height: 3.5vw;
         padding-right: 2%;
     }
     
-    dl {
-        width: 100%;
-        display: table-row;
-        background-color: white;
-        dt, dd {
-        display: table-cell;
-        padding-bottom: 2%;
-        }
-    }
-    
     dd {
-        width: 100%;
         padding-left: 2%;
         }
     
     .table1 {
-        width: 100%;
     
         tr {
             font-size: 3vw;
-            padding: 5% 0;
            
             & {
     
                 :nth-child(1) {
-                    width: 25%;
-                    text-align: left;
-                    font-weight: bold;
                     line-height: 3vw;
                 }
     
                 :nth-child(2) {
-                    width: 60%;
-                    text-align: start;
-                    text-decoration: underline;
-                    font-style: italic;
                     line-height: 3.5vw;
-                }
-    
-                :nth-child(3) {
-                    width: 15%;
-                    text-align: left;
                 }
             }    
         }
     }
     
     .table-container {
-        border-bottom: black solid 1px;
-        width: 100%;
         line-height: 4vw;
         h2,h3 {
             font-size: 3.5vw;
         }
-    
-        h3 {
-            font-weight: lighter;
-        }
     }
-    
-    .info-container {
-        border-bottom: black dotted 5px; 
-    }
-
-
 }
