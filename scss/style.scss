@@ -376,6 +376,20 @@ ul li:nth-child(4) a:hover .fa {
         line-height: 4vw;
     }
 
+    .digital-skills {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0 15%;
+        
+
+        img {
+            width: auto;
+            height: 8vw;
+            margin: 0 3vw 3vw 3vw;
+        }
+    }
+
     .name {
     
         .h1 {
