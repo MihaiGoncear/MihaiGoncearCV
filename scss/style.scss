@@ -13,6 +13,7 @@
 h1 {
     font-weight: bold;
     letter-spacing: -2px;
+    text-align: center;
 }
 
 a {
@@ -37,7 +38,6 @@ a {
     text-align: justify;
 }
 
-.section2, 
 .name, 
 .table2,
 dl,
@@ -220,6 +220,8 @@ ul li:nth-child(4) a:hover .fa {
     #full-container {
         flex-flow: row-reverse;
         min-width: 310px;   
+        justify-content: space-between;
+        margin: 0 1%;
     }
 
     .h1 { 
@@ -228,19 +230,35 @@ ul li:nth-child(4) a:hover .fa {
     }
 
     h1 {
-        margin-left: 20%;
         font-size: 40px;
         line-height: 50px;
     }
-
+    
     .section1 {
-        display: block;
-        position: fixed;
-        width: 35%;
-        top: 50%;
-        transform: translateY(-50%);
+        display: flex;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        flex-flow: column nowrap;
         padding: 10px;
-        right: 10px;
+        margin-left: 2%;
+        width: 34%;
+        height: 85vh;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+
+        &::-webkit-scrollbar-track {
+            background: rgb(109, 109, 109); 
+          }
+        
+        &::-webkit-scrollbar-thumb {
+            background: rgb(32, 32, 138); 
+
+            &:hover {
+                background: rgb(100, 89, 255); 
+            }    
+        }
     }
 
     .objective {
@@ -249,7 +267,7 @@ ul li:nth-child(4) a:hover .fa {
 
     .section2 {
         display: block;
-        margin: 0 40% 0 1%;
+        width: 64%;
     }
 
     .table2 {
@@ -258,6 +276,7 @@ ul li:nth-child(4) a:hover .fa {
         tr {
             font-size: 1.3vw;
             line-height: 1vw;
+            height: 1vh;
 
             td {
                 padding: 2% 0;
@@ -270,6 +289,8 @@ ul li:nth-child(4) a:hover .fa {
         font-size: 20px;
         tr {
             font-size: 1.3vw;
+            line-height: 1vh;
+            height: 1vh;
             
             td {
                 padding: 2% 0;
@@ -323,7 +344,6 @@ ul li:nth-child(4) a:hover .fa {
     }
 
     h1 {
-        text-align: center;
         padding: 3% 0;   
     }
 
@@ -334,6 +354,7 @@ ul li:nth-child(4) a:hover .fa {
 
     .section2 {
         margin: 0 2%;
+        width: 100%;
     }
 
     .objective {
