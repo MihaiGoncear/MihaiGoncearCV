@@ -261,15 +261,6 @@ ul li:nth-child(4) a:hover .fa {
         }
     }
 
-    .objective {
-        font-size: 1.3vw;
-    }
-
-    .section2 {
-        display: block;
-        width: 64%;
-    }
-
     .table2 {
         margin-left: 20px;
         
@@ -297,6 +288,42 @@ ul li:nth-child(4) a:hover .fa {
             }
         }
     }
+
+    .social-media {
+        ul {
+            li {
+                a {
+                    width: 3vw;
+                    height: 3vw;
+
+                    .fa {
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .digital-skills {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        img {
+            width: auto;
+            height: 4vw;
+            margin: 0 2vw 2vw 2vw;
+        }
+    }
+
+    .objective {
+        font-size: 1.3vw;
+    }
+
+    .section2 {
+        display: block;
+        width: 64%;
+    }
         
     dt {
         font-size: 1.75vw;
@@ -321,20 +348,6 @@ ul li:nth-child(4) a:hover .fa {
         }
     }
 
-    .social-media {
-        ul {
-            li {
-                a {
-                    width: 3vw;
-                    height: 3vw;
-
-                    .fa {
-                        font-size: 1.5vw;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @include isTelephone {
