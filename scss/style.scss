@@ -171,6 +171,7 @@ dd,
 
 .section2 {
     margin-bottom: 20px;
+  
 }
 
 dt {
@@ -225,6 +226,16 @@ dl {
     border-bottom: black dotted 5px; 
 }  
 
+.last-info-container {
+  border: hidden;
+}
+
+
+/*//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////*/
+
+
 @include isDesktop {
     #full-container {
         flex-flow: row-reverse;
@@ -240,13 +251,15 @@ dl {
     
     .section1 {
         display: flex;
+        position: fixed;
+        right: 1%;
         overflow-y: scroll;
         overflow-x: hidden;
         flex-flow: column nowrap;
         padding: 10px;
         margin-left: 2%;
         width: 34%;
-        height: 85vh;
+        height: 80vh;
 
         &::-webkit-scrollbar {
             width: 10px;
@@ -354,6 +367,12 @@ dl {
     }
 
 }
+
+
+/*//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////*/
+
 
 @include isTelephone {
     
