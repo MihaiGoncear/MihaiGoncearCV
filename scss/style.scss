@@ -18,17 +18,10 @@
     }
     .flag {
         display: flex;
-        flex-flow: row nowrap;
-    }
-}
-
-a {
-    text-decoration: none;
-    color: black;
-
-    &:hover {
-    border-bottom-style: solid;
-    color: rgb(255, 0, 0);
+        flex-flow: row nowrap; 
+        a {
+            text-decoration: none;
+        }   
     }
 }
 
@@ -95,7 +88,7 @@ dd,
     tr {
         & {
             :nth-child(1){
-                text-align: center;
+                text-align: right;
                 font-weight: bold;
             }
             :nth-child(2){
@@ -177,6 +170,16 @@ dd,
 
 .section2 {
     margin-bottom: 20px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    
+        &:hover {
+        border-bottom-style: solid;
+        color: rgb(255, 0, 0);
+        }
+    }
   
 }
 
@@ -365,6 +368,7 @@ dl {
     dt {
         font-size: 1.75vw;
         padding-right: 1%;
+        line-height: 1.5;
     }
 
     dd {
@@ -503,6 +507,7 @@ dl {
         font-size: 4vw;
         line-height: 3.5vw;
         padding-right: 2%;
+        line-height: 1.5;
     }
     
     dd {
