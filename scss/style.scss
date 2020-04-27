@@ -5,7 +5,7 @@
 
 #full-container {
     display: flex;
-    background-color:rgb(26, 137, 180);
+    background-color: var(--main-background-color);
     color: #000;
     line-height: 1.5;
 }
@@ -26,7 +26,7 @@
 }
 
 .section1 {
-    background-color: rgb(122, 218, 235);
+    background-color: var(--section1-background-color);
     
     h2 {
         text-align: center;
@@ -47,7 +47,7 @@ dd,
     justify-content: space-between;
     border-bottom: 1px solid black;
     align-items: center;
-    background-color: rgb(204, 255, 252);
+    background-color: var(--name-color);
 
     .h1 {
         line-height: 100%;
@@ -95,7 +95,7 @@ dd,
     }
 }
 .social-media {
-    background: rgb(122, 218, 235);
+    background: var(--section1-background-color);
 
     ul {
         margin:0;
@@ -292,10 +292,10 @@ dl {
           }
         
         &::-webkit-scrollbar-thumb {
-            background: rgb(0, 0, 141); 
+            background: rgb(32, 32, 138); 
 
             &:hover {
-                background: rgb(3, 41, 41); 
+                background: rgb(100, 89, 255); 
             }    
         }
     }
