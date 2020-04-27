@@ -5,9 +5,9 @@
 
 #full-container {
     display: flex;
-    line-height: 24px;
     background-color: rgb(204, 222, 255);
     color: #000;
+    line-height: 1.5;
 }
 
 .head {
@@ -31,10 +31,6 @@
     h2 {
         text-align: center;
     }
-}
-
-.objective {
-    text-align: justify;
 }
 
 .name, 
@@ -283,6 +279,10 @@ dl {
         width: 34%;
         height: 80vh;
 
+        h2 {
+            font-size: 1.7vw;
+        }
+
         &::-webkit-scrollbar {
             width: 10px;
           }
@@ -320,11 +320,11 @@ dl {
     }
 
     .table3 {
-        margin-left: 20px;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
         tr {
             font-size: 1.3vw;
-            line-height: 1vh;
+            line-height: 1.5;
             height: 1vh;
             
             td {
@@ -368,7 +368,6 @@ dl {
     dt {
         font-size: 1.75vw;
         padding-right: 1%;
-        line-height: 1.5;
     }
 
     dd {
@@ -384,7 +383,10 @@ dl {
 
     .table-container {
 
-        h2,h3 {
+        h2{
+            font-size: 1.7vw;
+        }
+        h3 {
             font-size: 1.5vw;
         }
     }
@@ -423,6 +425,10 @@ dl {
     .section1 {
         margin: 0 2%;
         width: 100%;
+
+        h2 {
+            font-size: 6vw;
+        }
     }
 
     .name {
@@ -492,12 +498,6 @@ dl {
         }
     }
 
-    .objective {
-        font-size: 3.5vw;
-        padding: 3%;
-        line-height: 4vw;
-    }
-
     .section2 {
         margin: 0 2%;
         width: 100%;
@@ -505,9 +505,7 @@ dl {
 
     dt {
         font-size: 4vw;
-        line-height: 3.5vw;
         padding-right: 2%;
-        line-height: 1.5;
     }
     
     dd {
@@ -533,9 +531,11 @@ dl {
     }
     
     .table-container {
-        line-height: 4vw;
-        h2,h3 {
+        h2 {
             font-size: 3.5vw;
+        }
+        h3 {
+            font-size: 3vw;
         }
     }
 
