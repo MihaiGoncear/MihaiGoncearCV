@@ -5,11 +5,11 @@
 }
 
 body {
-    background-color: var(--main-background-color);
+    background: var(--main-background-color);
 }
 
 :root {
-    --main-background-color:  rgb(130, 138, 255);
+    --main-background-color:  linear-gradient(rgb(96, 107, 255), rgb(151, 158, 255));
     --section1-background-color: rgb(150, 180, 235);
     --name-color: rgb(204, 222, 255);
 }
