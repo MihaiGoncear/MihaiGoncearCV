@@ -84,7 +84,7 @@ dd,
     tr {
         & {
             :nth-child(1){
-                text-align: right;
+                text-align: left;
                 font-weight: bold;
             }
             :nth-child(2){
@@ -306,7 +306,7 @@ dl {
     }
 
     .table2 {
-        margin-left: 20px;
+        
         
         tr {
             font-size: 1.3vw;
@@ -321,7 +321,7 @@ dl {
 
     .table3 {
         display: flex;
-        justify-content: center;
+        margin-left: 1.7%;
         tr {
             font-size: 1.3vw;
             line-height: 1.5;
@@ -463,9 +463,9 @@ dl {
 
     .table3 {
         width: 100%;
-        padding-left: 3%;
+        margin-left: 3%;
         tr {
-            font-size: 5vw;
+            font-size: 4.5vw;
             
             td {
                 padding: 2vw 0;
