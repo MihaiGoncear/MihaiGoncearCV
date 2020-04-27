@@ -6,10 +6,13 @@
 
 body {
     background: var(--main-background-color);
+    font-family: var(--main-font-family);
+    
 }
 
 :root {
-    --main-background-color:  linear-gradient(rgb(96, 107, 255), rgb(151, 158, 255));
+    --main-background-color:  linear-gradient(rgb(96, 107, 255), rgb(151, 158, 255), rgb(96, 107, 255));
     --section1-background-color: rgb(150, 180, 235);
     --name-color: rgb(204, 222, 255);
+    --main-font-family: 'Gentium Basic', serif;
 }
