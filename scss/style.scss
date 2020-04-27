@@ -5,7 +5,7 @@
 
 #full-container {
     display: flex;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(204, 222, 255);
     color: #000;
     line-height: 1.5;
 }
@@ -15,7 +15,6 @@
     
     h1 {
         font-weight: bold;
-        background-color: rgb(241, 241, 241);
     }
     .flag {
         display: flex;
@@ -27,7 +26,7 @@
 }
 
 .section1 {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(141, 175, 238);
     
     h2 {
         text-align: center;
@@ -48,7 +47,7 @@ dd,
     justify-content: space-between;
     border-bottom: 1px solid black;
     align-items: center;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(152, 186, 248);
 
     .h1 {
         line-height: 100%;
@@ -96,7 +95,7 @@ dd,
     }
 }
 .social-media {
-    background: rgb(180, 180, 180);
+    background: rgb(141, 175, 238);
 
     ul {
         margin:0;
@@ -119,7 +118,7 @@ dd,
                 transition: .5s;
 
                 &:hover {
-                    box-shadow: 0 2px 5px rgba(243, 0, 0, 0.548);
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
                 }
 
                 .fa {
@@ -289,14 +288,14 @@ dl {
           }
 
         &::-webkit-scrollbar-track {
-            background: rgb(145, 145, 145); 
+            background: rgb(109, 109, 109); 
           }
         
         &::-webkit-scrollbar-thumb {
-            background: rgb(63, 63, 63); 
+            background: rgb(32, 32, 138); 
 
             &:hover {
-                background: rgb(0, 0, 0); 
+                background: rgb(100, 89, 255); 
             }    
         }
     }
