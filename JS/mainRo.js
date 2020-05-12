@@ -1,0 +1,1 @@
+let result = alert('Salutare. Bine ați venit pe pagina mea de CV. Nu uitați să dați scroll si pe cardul principal din dreapta. Savurați :))')
