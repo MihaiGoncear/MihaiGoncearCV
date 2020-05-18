@@ -283,15 +283,15 @@ dl {
         }
 
         &::-webkit-scrollbar {
-            width: 10px;
+            width: 15px;
           }
 
         &::-webkit-scrollbar-track {
-            background: rgb(109, 109, 109); 
+            background: rgb(255, 170, 170); 
           }
         
         &::-webkit-scrollbar-thumb {
-            background: rgb(32, 32, 138); 
+            background: rgb(226, 20, 20); 
 
             &:hover {
                 background: rgb(100, 89, 255); 
