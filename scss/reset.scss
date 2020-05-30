@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
+html,body{
+    height: 100%;
+}
 body {
-    background: var(--main-background-color);
+    background-image: url(../pictures/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: var(--main-font-family);
     
 }
 
 :root {
-    --main-background-color:  linear-gradient(rgb(96, 107, 255), rgb(151, 158, 255), rgb(96, 107, 255));
+    --main-background-color:  rgba(166, 166, 223, 0.801);
     --section1-background-color: rgb(150, 180, 235);
     --name-color: rgb(204, 222, 255);
     --main-font-family: 'Gentium Basic', serif;

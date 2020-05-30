@@ -1,7 +1,5 @@
 @import "reset";
-@import "font-face";
 @import "mixin";
-
 
 #full-container {
     display: flex;
@@ -161,8 +159,40 @@ dd,
     }
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between ;
+    width: 40%;
+    margin-left: 1%;
+    p{
+        cursor: pointer;
+        background-color: var(--main-background-color);
+        border: black 1px solid;
+        border-bottom: 0;
+        padding: 1%;
+        width: 33%;
+        text-align: center;
+        border-radius: 10px 10px 0 0 ;
+        font-size: 20px;
+        &:hover{
+            background-color: rgb(31, 31, 160);
+            color: rgb(234, 234, 255);
+        }
+    }
+}
+
 .section2 {
     margin-bottom: 20px;
+    background-color: var(--main-background-color);
+    border: 1px solid black;
+    border-collapse: collapse;
+    .section2-default {
+        flex-flow: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
 
     a {
         text-decoration: none;
@@ -174,22 +204,6 @@ dd,
         }
     }
   
-}
-
-dt {
-    font-weight: bold;
-    text-align: right;
-    width: 20%;
-    border-right: 1px solid #999;
-}
-
-dl {
-    display: table-row;
-    background-color: white;
-    dt, dd {
-    display: table-cell;
-    padding-bottom: 2%;
-    }
 }
 
 .table1 {
@@ -217,21 +231,21 @@ dl {
 }
 
 .table-container {
-    border-bottom: black solid 1px;
+    border-bottom: black solid 2px;
+    padding-left: 3%;
+    padding-right: 3%;
 
     h3 {
         font-weight: lighter;
     }
+    &:last-child{
+        border: 0;
+    }
 }
 
-.info-container {
-    border-bottom: black dotted 5px; 
-}  
-
-.last-info-container {
-  border: hidden;
+.hidden{
+    display: none;
 }
-
 
 /*//////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
@@ -360,18 +374,8 @@ dl {
     }
 
     .section2 {
-        display: block;
-        width: 64%;
+        width: 65%;
     }
-        
-    dt {
-        font-size: 1.75vw;
-        padding-right: 1%;
-    }
-
-    dd {
-        padding-left: 26px;
-        }
 
     .table1 {
 
@@ -501,11 +505,6 @@ dl {
         margin: 0 2%;
         width: 100%;
     }   
-
-    dt {
-        font-size: 4vw;
-        padding-right: 2%;
-    }
     
     dd {
         padding-left: 2%;
