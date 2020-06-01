@@ -40,7 +40,9 @@
 }
 
 .contact-items {
+    display: flex;
     width: 100%;
+    justify-content: center;
     tr {
         & {
             :nth-child(1) {
@@ -59,6 +61,8 @@
 }
 
 .languages-items {
+    display: flex;
+    justify-content: center;
     tr {
         & {
             :nth-child(1){
