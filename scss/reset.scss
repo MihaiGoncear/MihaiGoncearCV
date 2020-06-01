@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
-}
+
 body {
     background-image: url(../pictures/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
     font-family: var(--main-font-family);
     
 }

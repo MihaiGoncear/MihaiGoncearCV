@@ -1,51 +1,33 @@
 @import "reset";
 @import "mixin";
+@import "navigation-script";
 
-#full-container {
-    display: flex;
-    color: #000;
-    line-height: 1.5;  
-}
-
-.head {
-    display: flex;
-    
-    h1 {
-        font-weight: bold;
-    }
-    .flag {
-        display: flex;
-        flex-flow: row nowrap; 
-        a {
-            text-decoration: none;
-        }   
-    }
-}
-
-.section1 {
-    background-color: var(--section1-background-color);    
+.full-personal-information-section {
     h2 {
         text-align: center;
     }
 }
 
-.name, 
-.table2,
-dl,
-dd, 
-.table1,
-.table-container {
-    width: 100%;
+.personal-information-items {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 10%;
+
+    .info-item{
+        width: 50%;
+        line-height: 3;
+    }
 }
 
 .name {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 0 10%;
     align-items: center;
     background-color: var(--name-color);
 
-    .h1 {
+    .name-surname {
         line-height: 100%;
         letter-spacing: 2px;
     }
@@ -57,7 +39,8 @@ dd,
     }         
 }
 
-.table2 {
+.contact-items {
+    width: 100%;
     tr {
         & {
             :nth-child(1) {
@@ -75,7 +58,7 @@ dd,
     }
 }
 
-.table3 {
+.languages-items {
     tr {
         & {
             :nth-child(1){
@@ -90,16 +73,16 @@ dd,
     }
 }
 .social-media {
-    background: var(--section1-background-color);
-
     ul {
-        margin:0;
         padding:0;
         display:flex;
         justify-content: center;
+        align-items: center;
+        flex-flow: column ;
 
         li {
             list-style: none;
+            margin: 5% 0;
 
             a {
                 display: block;
@@ -113,7 +96,7 @@ dd,
                 transition: .5s;
 
                 &:hover {
-                    box-shadow: 0 2px 5px rgb(255, 0, 0);
+                    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.548);
                 }
 
                 .fa {
@@ -151,32 +134,106 @@ dd,
 
 .digital-skills {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    li {
+        list-style: none;
+        flex: 0 0 33.333333%;
+        text-align: center;
+        padding: 4%;
 
-    img {
-        width: auto;
+        img{
+            width: 4.5vw;
+        }
+    }
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    h1 {
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        color: rgb(24, 24, 24);
+    }
+    .flag {
+        display: flex;
+        flex-flow: row nowrap; 
+        justify-content: flex-start;
+        margin-left: 10%;
+
+        a {
+            text-decoration: none;
+        }   
+
+        img {
+            margin: 2vw 1vw 0vw 0vw;
+            width: 2vw;
+            height: 2vw;
+        }
     }
 }
 
 .navigation {
+    width: 80%;
+    height: 100px;
     display: flex;
-    justify-content: space-between ;
-    width: 40%;
-    margin-left: 1%;
+    margin-left: 10%;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    font-family: 'Archivo', sans-serif;
+}
+
+.main-card {
+    display: flex;
+    width: 30%;
+    align-items: flex-end;
     p{
         cursor: pointer;
-        background-color: var(--main-background-color);
+        background-color: rgb(166, 166, 223);
         border: black 1px solid;
         border-bottom: 0;
-        padding: 1%;
-        width: 33%;
+        padding: 2%;
+        width: 50%;
         text-align: center;
         border-radius: 10px 10px 0 0 ;
-        font-size: 20px;
+        font-size: 1.2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
         &:hover{
-            background-color: rgb(31, 31, 160);
+            height: 50px;
+            background-color: rgb(211, 87, 87);
             color: rgb(234, 234, 255);
+        }
+    }
+}
+
+.navigation-skills {
+    display: flex;
+    width: 45%;
+    align-items: flex-end;
+    p{
+        cursor: pointer;
+        background-color: rgb(166, 166, 223);
+        border: black 1px solid;
+        border-bottom: 0;
+        padding: 2%;
+        width: 33.333333333%;
+        text-align: center;
+        border-radius: 10px 10px 0 0 ;
+        font-size: 1.2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        &:hover{
+            background-color: rgb(87, 87, 211);
+            color: rgb(234, 234, 255);
+            height: 50px;
         }
     }
 }
@@ -186,12 +243,15 @@ dd,
     background-color: var(--main-background-color);
     border: 1px solid black;
     border-collapse: collapse;
-    .section2-default {
+    width: 80%;
+    border-radius: 0 0 10px 10px;
+    margin-left: 10%;
+    .home {
         flex-flow: column;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        height: 1000px;
     }
 
     a {
@@ -207,9 +267,12 @@ dd,
 }
 
 .table1 {
+    font-size: 24px;
+    width: 100%;
+    padding: 0 5%;
     tr {
-        padding: 5% 0;
-
+        line-height: 2;
+        font-size: 1.6vw;
         & {
             :nth-child(1) {
                 width: 25%;
@@ -217,14 +280,15 @@ dd,
                 font-weight: bold;
             }
             :nth-child(2) {
-                width: 60%;
-                text-align: start;
+                width: 50%;
+                text-align: justify;
+                padding-left: 1,5%;
                 text-decoration: underline;
                 font-style: italic;
             }
             :nth-child(3) {
-                width: 15%;
-                text-align: center;
+                width: 25%;
+                text-align: right;
             }
         }
     }
@@ -232,10 +296,15 @@ dd,
 
 .table-container {
     border-bottom: black solid 2px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 5% 3% 5% 3%;
 
+    h2{
+        margin-left: 5%;
+        font-size: 2.2vw;
+    }
     h3 {
+        font-size: 1.7vw;
+        margin-left: 5%;
         font-weight: lighter;
     }
     &:last-child{
@@ -254,71 +323,28 @@ dd,
 
 @include isDesktop {
     #full-container {
-        flex-flow: row-reverse;
-        min-width: 310px;   
-        justify-content: space-between;
-        margin: 0 1%;
+        display: flex; 
+        justify-content: center;
     }
 
-    .head {
-        
-        h1 {
-            width: 55%;
-            margin: 2vw;
-            text-align: right;
-            font-size: 3vw;
-        }
-            
-        .flag {
-            justify-content: flex-end;
-            width: 45%;
-            img {
-                margin: 2vw 1vw 2vw 0vw;
-                width: 2vw;
-                height: 2vw;
-            }
-        }
-    }
+   
     
-    .section1 {
-        display: flex;
-        position: fixed;
-        right: 1%;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        flex-flow: column nowrap;
+    .full-personal-information-section {
+        
         padding: 10px;
         margin-left: 2%;
-        width: 34%;
-        height: 80vh;
 
         h2 {
-            font-size: 1.7vw;
-        }
-
-        &::-webkit-scrollbar {
-            width: 15px;
-          }
-
-        &::-webkit-scrollbar-track {
-            background: rgb(255, 170, 170); 
-          }
-        
-        &::-webkit-scrollbar-thumb {
-            background: rgb(226, 20, 20); 
-
-            &:hover {
-                background: rgb(100, 89, 255); 
-            }    
+            font-size: 2vw;
         }
     }
 
-    .h1 { 
+    .name-surname { 
         font-size: 3vw;
         padding-left: 10%;
     }
 
-    .table2 {
+    .contact-items {
         
         
         tr {
@@ -332,7 +358,7 @@ dd,
         }
     }
 
-    .table3 {
+    .languages-items {
         display: flex;
         margin-left: 1.7%;
         tr {
@@ -346,7 +372,7 @@ dd,
         }
     }
 
-    .social-media {
+    .social-media-items {
         ul {
             li {
                 a {
@@ -361,40 +387,32 @@ dd,
         }
     }
 
-    .digital-skills {
+//     .objective {
+//         font-size: 1.3vw;
+//     }
 
-        img {
-            height: 4vw;
-            margin: 0 2vw 2vw 2vw;
-        }
-    }
+//     .section2 {
+//         width: 65%;
+//     }
 
-    .objective {
-        font-size: 1.3vw;
-    }
+//     .table1 {
 
-    .section2 {
-        width: 65%;
-    }
+//         tr {
+//             font-size: 1.3vw;   
+//         }
+//     }
 
-    .table1 {
+//     .table-container {
 
-        tr {
-            font-size: 1.3vw;   
-        }
-    }
+//         h2{
+//             font-size: 1.7vw;
+//         }
+//         h3 {
+//             font-size: 1.5vw;
+//         }
+//     }
 
-    .table-container {
-
-        h2{
-            font-size: 1.7vw;
-        }
-        h3 {
-            font-size: 1.5vw;
-        }
-    }
-
-}
+ }
 
 
 /*//////////////////////////////////////////////////////////

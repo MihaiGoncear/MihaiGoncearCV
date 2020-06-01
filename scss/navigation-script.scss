@@ -1,0 +1,43 @@
+
+.navigation-skills-style{
+    cursor: pointer;
+    background-color: rgb(166, 166, 223);
+    border: black 1px solid;
+    border-bottom: 0;
+    padding: 2%;
+    width: 33.3333333%;
+    text-align: center;
+    border-radius: 10px 10px 0 0 ;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    &:hover{
+        background-color: rgb(87, 87, 211);
+        color: rgb(234, 234, 255);
+        height: 50px;
+    }
+};
+
+.main-navigation-style{
+        cursor: pointer;
+        background-color: rgb(166, 166, 223);
+        border: black 1px solid;
+        border-bottom: 0;
+        padding: 2%;
+        width: 50%;
+        text-align: center;
+        border-radius: 10px 10px 0 0 ;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        &:hover{
+            height: 50px;
+            background-color: rgb(211, 87, 87);
+            color: rgb(234, 234, 255);
+        }
+}
+
