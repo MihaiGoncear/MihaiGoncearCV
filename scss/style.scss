@@ -23,9 +23,9 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+    padding: 10% 0;
     margin: 0 10%;
     align-items: center;
-    background-color: var(--name-color);
 
     .name-surname {
         line-height: 100%;
@@ -34,7 +34,6 @@
 
     img {
         width: 30%;
-        max-width: 220px;
         margin: 10px;  
     }         
 }
@@ -76,6 +75,7 @@
         }
     }
 }
+
 .social-media {
     ul {
         padding:0;
@@ -87,6 +87,7 @@
         li {
             list-style: none;
             margin: 5% 0;
+            font-size: 3vw;
 
             a {
                 display: block;
@@ -98,14 +99,18 @@
                 box-shadow: 0 10px 15px rgba(0,0,0,0.3);
                 background: linear-gradient(0deg, #ddd, #fff);
                 transition: .5s;
+                width: 5vw;
+                height: 5vw;
+                
 
                 &:hover {
                     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.548);
                 }
 
                 .fa {
+                    
                     width: 100%;
-                    height:100%;
+                    height: 100%;
                     display:flex;
                     justify-content: center;
                     align-items: center;
@@ -250,13 +255,6 @@
     width: 80%;
     border-radius: 0 0 10px 10px;
     margin-left: 10%;
-    .home {
-        flex-flow: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 1000px;
-    }
 
     a {
         text-decoration: none;
@@ -330,9 +328,7 @@
         display: flex; 
         justify-content: center;
     }
-
-   
-    
+ 
     .full-personal-information-section {
         
         padding: 10px;
@@ -372,21 +368,6 @@
             
             td {
                 padding: 2% 0;
-            }
-        }
-    }
-
-    .social-media-items {
-        ul {
-            li {
-                a {
-                    width: 3vw;
-                    height: 3vw;
-
-                    .fa {
-                        font-size: 1.5vw;
-                    }
-                }
             }
         }
     }

@@ -6,12 +6,11 @@ let experience = document.getElementById('nav-experience');
 let homeBtn = document.getElementById('nav-home');
 let personalInfoButt = document.getElementById('nav-personal-info')
 
-let home = document.getElementById('home')
+let home = document.getElementById('name')
 let dl1 = document.getElementById('dl1');
 let dl2 = document.getElementById('dl2');
 let dl3 = document.getElementById('dl3');
 let personalInfo = document.getElementById('personal-info');
-
 
 education.onclick = revealEducation;
 training.onclick = revealTraining;
@@ -59,7 +58,7 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
     personalInfoButt.style.height = "";
     personalInfoButt.classList.add('main-navigation-style');    
 
-    home.classList.remove('home');
+    home.classList.remove('name');
     home.classList.add('hidden');
 
     personalInfo.classList.remove('test');
@@ -109,6 +108,7 @@ function mainReveal(dl1, dl2, dl3, education, training, experience, firstButt,se
     secondButt.classList.add('main-navigation-style');
 
     firstSect.classList.remove('hidden')
-    secondSect.classList.remove('home')
+    firstSect.classList.add('name')
+    secondSect.classList.remove('name')
     secondSect.classList.add('hidden')
 }
