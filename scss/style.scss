@@ -2,61 +2,54 @@
 @import "mixin";
 @import "navigation-script";
 
-.full-personal-information-section {
-    h2 {
-        text-align: center;
-    }
-}
-
 .personal-information-items {
     display: flex;
-    flex-flow: row wrap;
-    margin: 0 5%;
-
+    flex-flow: column nowrap;
+    
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+    }
     .info-item{
-        width: 50%;
         line-height: 3;
+        margin-top: 5%;
     }
 }
 
 .name {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    width: 80%;
     padding: 10% 0;
-    margin: 0 10%;
-    align-items: center;
-
-    .name-surname {
-        line-height: 100%;
-        letter-spacing: 2px;
-    }
-
-    img {
-        width: 30%;
-        margin: 10px;  
-    }         
-}
-
-.contact-items {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    tr {
-        & {
-            :nth-child(1) {
-                text-align: center;
-            }
-            :nth-child(2) {
-                padding-left: 5px;
+    .contact-info{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-right: 20%;
+        .name-surname {
+            letter-spacing: 2px;
+            padding: 0 3%;
+        }
+        table {
+            tr {
+                line-height: 2;
+                & {
+                    :nth-child(1) {
+                        text-align: center;
+                        font-size: 1.5vw;
+                    }
+                    :nth-child(2) {
+                        padding-left: 5px;
+                    }
+                }
             }
         }
     }
-    
-    .span1 {
-        color: rgb(56, 56, 56);
-        border-bottom: 2px dotted  rgb(104, 104, 104);
-    }
+
+    img {
+        width: 20%;
+        margin: 5% 3% 5% 5% ;
+    }          
 }
 
 .languages-items {
@@ -82,12 +75,12 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        flex-flow: column ;
+        flex-flow: row ;
 
         li {
             list-style: none;
             margin: 5% 0;
-            font-size: 3vw;
+            font-size: 1.5vw;
 
             a {
                 display: block;
@@ -99,8 +92,8 @@
                 box-shadow: 0 10px 15px rgba(0,0,0,0.3);
                 background: linear-gradient(0deg, #ddd, #fff);
                 transition: .5s;
-                width: 5vw;
-                height: 5vw;
+                width: 3vw;
+                height: 3vw;
                 
 
                 &:hover {
@@ -144,7 +137,7 @@
 .digital-skills {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    margin: 0 15%;
     li {
         list-style: none;
         flex: 0 0 33.333333%;
@@ -324,24 +317,11 @@
 
 
 @include isDesktop {
-    #full-container {
-        display: flex; 
-        justify-content: center;
-    }
+    
  
-    .full-personal-information-section {
-        
-        padding: 10px;
-        margin-left: 2%;
-
-        h2 {
-            font-size: 2vw;
-        }
-    }
 
     .name-surname { 
         font-size: 3vw;
-        padding-left: 10%;
     }
 
     .contact-items {
@@ -359,8 +339,6 @@
     }
 
     .languages-items {
-        display: flex;
-        margin-left: 1.7%;
         tr {
             font-size: 1.3vw;
             line-height: 1.5;
@@ -372,30 +350,7 @@
         }
     }
 
-//     .objective {
-//         font-size: 1.3vw;
-//     }
 
-//     .section2 {
-//         width: 65%;
-//     }
-
-//     .table1 {
-
-//         tr {
-//             font-size: 1.3vw;   
-//         }
-//     }
-
-//     .table-container {
-
-//         h2{
-//             font-size: 1.7vw;
-//         }
-//         h3 {
-//             font-size: 1.5vw;
-//         }
-//     }
 
  }
 

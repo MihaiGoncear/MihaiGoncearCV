@@ -61,7 +61,7 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
     home.classList.remove('name');
     home.classList.add('hidden');
 
-    personalInfo.classList.remove('test');
+    personalInfo.classList.remove('personal-information-items');
     personalInfo.classList.add('hidden');
 
 
@@ -69,16 +69,51 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
 
 // Script to style the main-navigation section
 
-homeBtn.onclick = revealHome;
-personalInfoButt.onclick = revealPersonalInfo
-function revealHome() {
-    mainReveal(dl1, dl2, dl3, education, training, experience, homeBtn, personalInfoButt, home, personalInfo)
-}
-function revealPersonalInfo() {
-    mainReveal(dl1, dl2, dl3, education, training, experience, personalInfoButt, homeBtn, personalInfo, home)
+homeBtn.onclick = handleHomeButton;
+personalInfoButt.onclick = handlePersonalInfoButton;
+
+function handleHomeButton() {
+
+    deleteHistorySection();
+
+    homeBtn.style.backgroundColor = "rgb(161, 68, 68)";
+    homeBtn.style.color = "rgb(234, 234, 255)";
+    homeBtn.style.height = "50px";
+
+    personalInfoButt.style.backgroundColor = "";
+    personalInfoButt.style.color = "";
+    personalInfoButt.style.height = "";
+    personalInfoButt.classList.add('main-navigation-style');
+
+    home.classList.remove('hidden');
+    home.classList.add('name');
+
+    personalInfo.classList.remove('personal-information-items');
+    personalInfo.classList.add('hidden');
 }
 
-function mainReveal(dl1, dl2, dl3, education, training, experience, firstButt,secondButt, firstSect, secondSect ){
+function handlePersonalInfoButton(){
+
+    deleteHistorySection();
+
+    personalInfoButt.style.backgroundColor = "rgb(161, 68, 68)";
+    personalInfoButt.style.color = "rgb(234, 234, 255)";
+    personalInfoButt.style.height = "50px";
+
+    homeBtn.style.backgroundColor = "";
+    homeBtn.style.color = "";
+    homeBtn.style.height = "";
+    homeBtn.classList.add('main-navigation-style');
+
+    personalInfo.classList.remove('hidden');
+    personalInfo.classList.add('personal-information-items');
+
+    home.classList.remove('name');
+    home.classList.add('hidden');
+
+}
+
+function deleteHistorySection(){
     dl1.classList.add('hidden');
     dl2.classList.add('hidden');
     dl3.classList.add('hidden');
@@ -97,18 +132,4 @@ function mainReveal(dl1, dl2, dl3, education, training, experience, firstButt,se
     experience.style.color = "";
     experience.style.height = "";
     experience.classList.add('navigation-skills-style');
-
-    firstButt.style.backgroundColor = "rgb(161, 68, 68)";
-    firstButt.style.color = "rgb(234, 234, 255)";
-    firstButt.style.height = "50px";
-
-    secondButt.style.backgroundColor = "";
-    secondButt.style.color = "";
-    secondButt.style.height = "";
-    secondButt.classList.add('main-navigation-style');
-
-    firstSect.classList.remove('hidden')
-    firstSect.classList.add('name')
-    secondSect.classList.remove('name')
-    secondSect.classList.add('hidden')
 }
