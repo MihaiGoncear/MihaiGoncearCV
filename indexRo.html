@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,10 +11,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="full-container"></div>
 
 <!-- Head, flags and Main title -->
 
@@ -29,13 +31,11 @@
 
         <div class="navigation" id="navigation">
             <div class="main-card">
-                <p id="nav-home">ACASĂ</p>
-                <p id="nav-personal-info">Informație Personală</p>
-            </div>
-            <div class="navigation-skills">
-                <p class="navigation-skills-style" id="nav-education">Educație</p>
-                <p class="navigation-skills-style" id="nav-training">Cursuri și Traininguri</p>
-                <p class="navigation-skills-style" id="nav-experience">Experiență de Lucru</p>
+                <p id="nav-home"><i class="material-icons">assignment_ind</i>&nbsp;Informații Personale</p>
+                <p id="nav-personal-info"><i class="material-icons">assessment</i>&nbsp;Abilități</p>
+                <p id="nav-education"><i class="material-icons">school</i>&nbsp;Educație</p>
+                <p id="nav-training"><i class="material-icons">import_contacts</i>&nbsp;Cursuri și Traininguri</p>
+                <p id="nav-experience"><i class="material-icons">business_center</i>&nbsp;Experiență de Lucru</p>
             </div>
         </div>
 
@@ -46,27 +46,45 @@
     <!-- Personal Contact info -->
 
             <div id="name" class="name">
-                <img src="./pictures/photo.jpg" alt="MihaiGoncear">
-                <div class="contact-info info-item">
-                    <p class="name-surname">Mihai<br><span style="font-variant:small-caps;">Goncear</span></p>
-                    <table class="contact-items">
-                        <tr>
-                            <td>&#128241;</td>
-                            <td><span class="span1">+37360163404</span></td>
-                        </tr>
-                        <tr>
-                            <td>&#128231;</td>
-                            <td><span class="span1">m.goncearm@gmail.com</span></td>
-                        </tr>
-                        <tr>
-                            <td>&#127968;</td>
-                            <td><span class="span1">P. Lescenco 46/1, Chișinău, R. Moldova</span></td>
-                        </tr>
-                        <tr>
-                            <td>&#127874;</td>
-                            <td><span class="span1">22 Jan 1997</span></td>
-                        </tr>
-                    </table>
+                <div class="name-surname">
+                    <p>Mihai <span style="font-variant:small-caps;">Goncear</span></p>
+                </div>
+                <div class="contact-info">
+                    <div class="my-profile-photo">
+                        <img src="./pictures/photo.jpg" alt="MihaiGoncear">
+                    </div>
+                    <div class="contact-items">
+                        <table>
+                            <tr>
+                                <td>&#128241;</td>
+                                <td><span class="span1">+37360163404</span></td>
+                            </tr>
+                            <tr>
+                                <td>&#128231;</td>
+                                <td><span class="span1">m.goncearm@gmail.com</span></td>
+                            </tr>
+                            <tr>
+                                <td>&#127968;</td>
+                                <td><span class="span1">P. Lescenco 46/1, Chișinău, R. Moldova</span></td>
+                            </tr>
+                            <tr>
+                                <td>&#127874;</td>
+                                <td><span class="span1">22 Ian 1997</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="social-media info-item">
+                    <ul>
+                        <li><a href="https://www.facebook.com/MihaiGoncear1997" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://join.skype.com/invite/fuy5VwF8zeQf" target="_blank"><i
+                                    class="fa fa-skype" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/mihaigoncear/" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://join.slack.com/t/mihaigoncear/shared_invite/zt-dihm7gqd-XT1OJ0yFDKvJ_mvyc5BJxQ"
+                                target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -75,7 +93,7 @@
             <div class="hidden" id="personal-info">
 
             <!-- Personal information items -->
-            
+                
                 <div class="personal-information-items">
 
                 <!-- Personal Languages info -->
@@ -84,35 +102,15 @@
                         <h2>Limbi Străine</h2>
                         <table class="languages-items">
                             <tr>
-                                <td>Engleza:</td>
-                                <td>&#128309 &#128309 &#128309 &#128309 &#128309 &#128309 &#128309 &#128309 &#128308
-                                    &#128308</td>
+                                <td>Engleză:</td>
+                                <td><span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-red"></span>&nbsp;<span class="dot dot-red"></span>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>Rusa:</td>
-                                <td>&#128309 &#128309 &#128309 &#128309 &#128309 &#128309 &#128309 &#128308 &#128308
-                                    &#128308</td>
+                                <td>Rusă:</td>
+                                <td><span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-green"></span>&nbsp;<span class="dot dot-red"></span>&nbsp;</td>
                             </tr>
                         </table>
-                    </div>
-
-                <!-- Personal Social Media info-->
-
-                    <div class="social-media info-item">
-                        <h2>Social Media</h2>
-                        <div class="social-media-items">
-                            <ul>
-                                <li><a href="https://www.facebook.com/MihaiGoncear1997" target="_blank"><i
-                                            class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="https://join.skype.com/invite/fuy5VwF8zeQf" target="_blank"><i
-                                            class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.instagram.com/mihaigoncear/" target="_blank"><i
-                                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="https://join.slack.com/t/mihaigoncear/shared_invite/zt-dihm7gqd-XT1OJ0yFDKvJ_mvyc5BJxQ"
-                                        target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    </div>                  
 
                 <!-- Personal Digital skills info-->
 
@@ -138,292 +136,292 @@
         <!-- CV history EDUCATION -->  
 
             <div class="hidden" id="dl1">
-                <div class=table-container>
-                    <h2>
-                        <a href="http://ot.ubbcluj.ro/" target="_blank">Facultatea de Teologie Ortodoxă, Universitatea „Babeș-Bolyai”</a>
-                    </h2>
-                    <br>
-                    <h3>Cluj-Napoca, România</h3>
-                    <table class="table1">
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://ot.ubbcluj.ro/" target="_blank">Facultatea de Teologie Ortodoxă, Universitatea „Babeș-Bolyai”</a></h2>
+                            <h3>Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <br>
+                            <tr>
+                                <td>Masterat</td>
+                                <td>Bioetică - morală și deontologie</td>
+                                <td>2019 - 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Licență</td>
+                                <td>Teologie pastorală</td>
+                                <td>2015 - 2019</td>
+                            </tr>
+                        </table>
                         <br>
-                        <tr>
-                            <td>Masterat</td>
-                            <td>Bioetica - Morală și deontologie</td>
-                            <td>2019 - 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Licență</td>
-                            <td>Teologie Pastorală</td>
-                            <td>2015 - 2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="http://www.ceef.md/" target="_blank">Centrul de Excelență în Economie și Finanțe</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Liceu</td>
-                            <td>Finanțe și asigurări</td>
-                            <td>2012 - 2015</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://www.ceef.md/" target="_blank">Center of Excellence in Economy and Finance</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Liceu</td>
+                                <td>Finanțe și asigurări</td>
+                                <td>2012 - 2015</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="http://ioncreanga.starnet.md/" target="_blank">Liceul Teoretic "Ion Creanga"</a>
-                    </h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Gimnaziu</td>
-                            <td></td>
-                            <td>2003 - 2012</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://ioncreanga.starnet.md/" target="_blank">Liceul Teoretic "Ion Creanga"</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Gimnaziu</td>
+                                <td></td>
+                                <td>2003 - 2012</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="http://www.semia.md/ro/products/education/school/maria_bieshu_school/contacts/default.aspx" target="_blank">Școala Muzicală nr.1  "Maria Bieșu"</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Instrument muzical</td>
-                            <td>Chitara</td>
-                            <td>2008 - 2012</td>
-                        </tr>
-                    </table>
-                    <br>
-                </div>
-            </div>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://www.semia.md/ro/products/education/school/maria_bieshu_school/contacts/default.aspx" target="_blank">Școala Muzicală "Maria Bieșu"</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Instrument Muzical</td>
+                                <td>Chitară</td>
+                                <td>2008 - 2012</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>               
+            </div> 
 
         <!-- CV history TRAINING -->   
 
             <div class="hidden" id="dl2">
-                <div class=table-container>
-                    <h2><a href="https://skillup.md/lp/frontend-kishinev/" target="_blank">SkillUp</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Cursuri</td>
-                            <td>Front End</td>
-                            <td>03.2020 - on going</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://skillup.md/lp/frontend-kishinev/" target="_blank">SkillUp</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Cursuri</td>
+                                <td>Front End</td>
+                                <td>03.2020 - prezent</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="https://vic.md/ro/" target="_blank">Training Compania VIC Mobile</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Cursuri</td>
-                            <td>Merchandising și marketing</td>
-                            <td>11.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://vic.md/ro/" target="_blank">Training, Compania VIC Mobile</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Cursuri</td>
+                                <td>Merchandising și marketing</td>
+                                <td>11.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="https://gazetaph.ro/program-cursurile-de-vara-ale-universitatii-populare-nicolae-iorga-11-16-august-2019/" target="_blank">Universitatea Populară "Nicolae Iorga"</a></h2>
-                    <br>
-                    <h3>Vălenii de Munte, România</h3>
-                    <table class="table1">
-                        <br>
-                        <tr>
-                            <td>Conferință</td>
-                            <td>Cursuri de vară în județul Prahova</td>
-                            <td>15 - 20.08.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://gazetaph.ro/program-cursurile-de-vara-ale-universitatii-populare-nicolae-iorga-11-16-august-2019/" target="_blank">Universitatea Populară "Nicolae Iorga"</a></h2>
+                            <h3>Vălenii de Munte, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Conferință</td>
+                                <td>Cursuri de vară în județul Prahova</td>
+                                <td>15 - 20.08.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="https://www.erasmusplus.ro/library/Adulti/2016/KA2/Rezultate%20KA2_AE_%202016.1.pdf" target="_blank">Universitatea "Stefan cel Mare"</a></h2>
-                    <br>
-                    <h3>Suceava, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Conferință</td>
-                            <td>Building Bridges: Promoting Social Inclusion and Wellbeing for Families of Children with Special Needs</td>
-                            <td>31.01.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://www.erasmusplus.ro/library/Adulti/2016/KA2/Rezultate%20KA2_AE_%202016.1.pdf" target="_blank">Universitatea "Stefan cel Mare"</a></h2>
+                            <h3>Suceava, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Conferință</td>
+                                <td>Building Bridges: Promoting Social Inclusion and Wellbeing for Families of Children with Special Needs</td>
+                                <td>31.01.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="./sorry.html" target="_blank">Universitatea de Stat a Moldovei</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Conferință</td>
-                            <td>Conferinta Stiintifica Studenteasca „Politici europene de cercetare si inovare: cooperare, idei, oameni si capacitati”</td>
-                            <td>11.03.2016</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="./sorry.html" target="_blank">Universitatea de Stat din Moldova</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Conferință</td>
+                                <td>Conferinta Stiintifica Studenteasca „Politici europene de cercetare si inovare: cooperare, idei, oameni si capacitati”</td>
+                                <td>11.03.2016</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="http://www.aoln.ro/?fbclid=IwAR2dxDDm5yJijk5yQMi1PyqnJDz3P0SAVN_5FKd7ZDVaUKB34PSdq_FUNMk" target="_blank">A.O.L.N.</a></h2>
-                    <br>
-                    <h3>Gorj, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Proiect</td>
-                            <td>Proiect Internațional Dezvoltare, Autocunoaștere și Consiliere</td>
-                            <td>2011 - 2013</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://www.aoln.ro/?fbclid=IwAR2dxDDm5yJijk5yQMi1PyqnJDz3P0SAVN_5FKd7ZDVaUKB34PSdq_FUNMk" target="_blank">A.O.L.N.</a></h2>
+                            <h3>Gorj, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Proiect</td>
+                                <td>Proiect Internațional Dezvoltare, Autocunoaștere și Consiliere</td>
+                                <td>2011 - 2013</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="https://mecc.gov.md/sites/default/files/curriculum_firma_de_exercitiu.pdf" target="_blank">Cooperarea Austriacă pentru Dezvoltare și Ministerul Federal al Învățământului, Artei și Culturii din Austria</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Proiect</td>
-                            <td>ECO NET "Educația antreprenorială prin Firma de Exercițiu"</td>
-                            <td>09.2014 - 05.2015</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://mecc.gov.md/sites/default/files/curriculum_firma_de_exercitiu.pdf" target="_blank">Cooperarea Austriacă pentru Dezvoltare și Ministerul Federal al Învățământului, Artei și Culturii din Austria</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Proiect</td>
+                                <td>ECO NET „Educația antreprenorială prin Firma de Exercițiu”</td>
+                                <td>09.2014 - 05.2015</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class=table-container>
-                    <br>
-                    <h2><a href="http://mda.mytkditf.com/organizations/?orgid=25" target="_blank">Euro Taekwondo Federation</a>
-                    </h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Sport</td>
-                            <td>Certificate of confirmation, 3<sup>rd</sup> Kup/Grade</td>
-                            <td>2005 - 2011</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://mda.mytkditf.com/organizations/?orgid=25" target="_blank">Euro Taekwondo Federation</a>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Sport</td>
+                                <td>Certificate of confirmation, 3<sup>rd</sup> Kup/Grade</td>
+                                <td>2005 - 2011</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
 
         <!-- CV history EXPERIENCE -->   
 
             <div class="dl3 hidden" id="dl3">
-                <div class="table-container">
-                    <h2><a href="https://www.miraveli-education.ro/" target="_blank">Centrul de Educație ”Miraveli”</a>
-                    </h2>
-                    <br>
-                    <h3>Cluj-Napoca, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Departamentul Educație</td>
-                            <td>Profesor de muzică și chitară</td>
-                            <td>10.2018 - 06.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://www.miraveli-education.ro/" target="_blank">Centrul de Educație Miraveli</a></h2>
+                            <h3>Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Departamentul Educație</td>
+                                <td>Profesor de muzică și chitară</td>
+                                <td>10.2018 - 06.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table-container">
-                    <br>
-                    <h2><a href="https://mlvipguard.ro/" target="_blank">VIP Guard Security</a></h2>
-                    <br>
-                    <h3>Cluj-Napoca, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Departamentul Securitate</td>
-                            <td>Agent crowd control</td>
-                            <td>07.2018 - 06.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://mlvipguard.ro/" target="_blank">VIP Guard Security</a></h2>
+                            <h3>Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Departmentul Securitate</td>
+                                <td>Agent crowd control</td>
+                                <td>07.2018 - 06.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table-container">
-                    <br>
-                    <h2><a href="https://hotelplatinia.ro/" target="_blank">Platinia Luxury Suites</a></h2>
-                    <br>
-                    <h3>Cluj-Napoca, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Departamentul Turism</td>
-                            <td>Hotel concierge</td>
-                            <td>10.2016 - 01.2017</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://hotelplatinia.ro/" target="_blank">Platinia Luxury Suites</a></h2>
+                            <h3>Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Departamentul Turism</td>
+                                <td>Hotel concierge</td>
+                                <td>10.2016 - 01.2017</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table-container">
-                    <br>
-                    <h2><a href="https://centrulpaliativsfantulnectarie.ro/" target="_blank">Centrul de Îngrijiri Paliative "Sf. Nectarie"</a></h2>
-                    <br>
-                    <h3>Cluj-Napoca, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Volunariat</td>
-                            <td>Asistență spirituală și socială pentru pacienții cu boli oncologice în stadii avansate de evoluție.</td>
-                            <td>10.2018 - 05.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="https://centrulpaliativsfantulnectarie.ro/" target="_blank">Centrul de Îngrijiri Paliative "Sf. Nectarie"</a></h2>
+                            <h3>Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Voluntariat</td>
+                                <td>Asistență spirituală și socială pentru pacienții cu boli oncologice în stadii avansate de evoluție</td>
+                                <td>10.2018 - 05.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table-container">
-                    <br>
-                    <h2><a href="http://bisericasfintiitreiierarhi.md/" target="_blank">Tabăra de vară a Bisericii Ortodoxe ”Sfinții Trei Ierarhi”, Ed. I</a></h2>
-                    <br>
-                    <h3>Chișinău, Republica Moldova</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Voluntariat</td>
-                            <td>Educător</td>
-                            <td>06.2019 - 07.2019</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="http://bisericasfintiitreiierarhi.md/" target="_blank">Tabăra de vară a Bisericii Ortodoxe ”Sfinții Trei Ierarhi”, Ed. I</a></h2>
+                            <h3>Chișinău, Republica Moldova</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Voluntariat</td>
+                                <td>Educător</td>
+                                <td>06.2019 - 07.2019</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="table-container">
-                    <br>
-                    <h2><a href="sorry.html" target="_blank">Gala Festivalului Tinerilor Ed. II</a></h2>
-                    <br>
-                    <h3>Arhiepiscopia Vadului, Feleacului și a Clujului, Cluj-Napoca, România</h3>
-                    <br>
-                    <table class="table1">
-                        <tr>
-                            <td>Voluntariat</td>
-                            <td>Organizator</td>
-                            <td>15.10.2016</td>
-                        </tr>
-                    </table>
-                    <br>
+                <div class="full-table-container">
+                    <div class=table-container>
+                        <div class="location">
+                            <h2><a href="sorry.html" target="_blank">Gala Festivalului Tinerilor Ed. II</a></h2>
+                            <h3>Arhiepiscopia Vadului, Feleacului și a Clujului, Cluj-Napoca, România</h3>
+                        </div>
+                        <table class="table1">
+                            <tr>
+                                <td>Voluntariat</td>
+                                <td>Organizator</td>
+                                <td>15.10.2016</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
