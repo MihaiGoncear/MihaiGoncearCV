@@ -35,7 +35,7 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
 
     firstButt.style.backgroundColor = "rgb(68, 68, 161)";
     firstButt.style.color = "rgb(234, 234, 255)";
-    firstButt.style.height = "50px"
+    firstButt.style.height = "60px"
 
     secondButt.style.backgroundColor = "";
     secondButt.style.color = "";
@@ -51,12 +51,12 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
     homeBtn.style.backgroundColor = "";
     homeBtn.style.color = "";
     homeBtn.style.height = "";
-    homeBtn.classList.add('main-navigation-style');
+    homeBtn.classList.add('navigation-skills-style');
 
     personalInfoButt.style.backgroundColor = "";
     personalInfoButt.style.color = "";
     personalInfoButt.style.height = "";
-    personalInfoButt.classList.add('main-navigation-style');    
+    personalInfoButt.classList.add('navigation-skills-style');    
 
     home.classList.remove('name');
     home.classList.add('hidden');
@@ -76,14 +76,14 @@ function handleHomeButton() {
 
     deleteHistorySection();
 
-    homeBtn.style.backgroundColor = "rgb(161, 68, 68)";
+    homeBtn.style.backgroundColor = "rgb(68, 68, 161)";
     homeBtn.style.color = "rgb(234, 234, 255)";
-    homeBtn.style.height = "50px";
+    homeBtn.style.height = "60px";
 
     personalInfoButt.style.backgroundColor = "";
     personalInfoButt.style.color = "";
     personalInfoButt.style.height = "";
-    personalInfoButt.classList.add('main-navigation-style');
+    personalInfoButt.classList.add('navigation-skills-style');
 
     home.classList.remove('hidden');
     home.classList.add('name');
@@ -96,14 +96,14 @@ function handlePersonalInfoButton(){
 
     deleteHistorySection();
 
-    personalInfoButt.style.backgroundColor = "rgb(161, 68, 68)";
+    personalInfoButt.style.backgroundColor = "rgb(68, 68, 161)";
     personalInfoButt.style.color = "rgb(234, 234, 255)";
-    personalInfoButt.style.height = "50px";
+    personalInfoButt.style.height = "60px";
 
     homeBtn.style.backgroundColor = "";
     homeBtn.style.color = "";
     homeBtn.style.height = "";
-    homeBtn.classList.add('main-navigation-style');
+    homeBtn.classList.add('navigation-skills-style');
 
     personalInfo.classList.remove('hidden');
     personalInfo.classList.add('personal-information-items');

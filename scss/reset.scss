@@ -8,14 +8,16 @@
 body {
     background-image: url(../pictures/bg.jpg);
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
+    
+  background-attachment: fixed;
     font-family: var(--main-font-family);
     
 }
 
 :root {
-    --main-background-color:  rgba(166, 166, 223, 0.801);
+    --main-background-color:  rgba(166, 197, 223, 0.801);
     --section1-background-color: rgb(150, 180, 235);
     --name-color: rgb(204, 222, 255);
     --main-font-family: 'Gentium Basic', serif;
