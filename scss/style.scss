@@ -8,7 +8,7 @@
     font-size: 1.5vw;
     h1 {
         font-weight: bold;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Satisfy', cursive;
         font-style: italic;
         color: rgb(24, 24, 24);
     }
@@ -101,10 +101,14 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     .name-surname {
-        background-color: rgb(204, 204, 204);
+        background-color: rgba(21, 101, 192, 0.700);
         letter-spacing: 2px;
         text-align: center;
         padding: 1%;
+        p{
+            color: #BBDEFB;
+            font-size: 4vw;
+        }
     }
     .contact-info{
         padding: 3%;
@@ -135,7 +139,7 @@
                             font-size: 1.5vw;
                         }
                         :nth-child(2) {
-                            background-color: rgb(166, 210, 223);
+                            background-color: rgba(33, 149, 243, 0.850);
                             padding-left: 5px;
                             border-radius: 10px;
                         }
@@ -147,7 +151,7 @@
 
     .social-media {
         padding: 1%;
-        background-color: rgb(204, 204, 204);
+        background-color: rgba(21, 101, 192, 0.700);
         border-radius: 10px;
         ul {
             display:flex;
@@ -216,7 +220,7 @@
 
 .section2 {
     margin-bottom: 10%;
-    background-color: var(--main-background-color);
+    background-color: rgba(25, 118, 210, 0.801);
     border: 1px solid black;
     border-collapse: collapse;
     width: 80%;
@@ -235,10 +239,10 @@
 }
 
 .table1 {
-    background-color: #2980b9;
     font-size: 24px;
     width: 100%;
     padding: 0 5%;
+    border-radius: 15px;
     tr {
         line-height: 2;
         font-size: 1.6vw;
@@ -263,10 +267,13 @@
     }
 }
 .location {
-    background-color: #2980b9;
-    color: white;
+    display: flex;
+    flex-flow: column nowrap;    
+    justify-content: center;
+    align-content: center;
     transform: rotateY(180deg);
     width: 100%;
+    border-radius: 15px;
     h2{
         font-size: 2.2vw;
     }
@@ -285,7 +292,8 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.486);
+    border-radius: 15px;
 
     &:last-child{
         border: 0;
@@ -307,7 +315,8 @@
 .table1, .location {
     backface-visibility: hidden;
     position: absolute;
-    
+    //background-image: radial-gradient(#42A5F5 80%, #BBDEFB 10%);
+    background-image: radial-gradient(#BBDEFB, #42A5F5 );
     top: 0;
     height: 100%;
 }
@@ -324,11 +333,6 @@
 
 @include isDesktop {
     
- 
-
-    .name-surname { 
-        font-size: 3vw;
-    }
 
     .contact-items {
         

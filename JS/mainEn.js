@@ -33,7 +33,7 @@ function contentReveal(firstSect, secondSect, thirdSect, firstButt, secondButt, 
     secondSect.classList.add('hidden');
     thirdSect.classList.add('hidden');
 
-    firstButt.style.backgroundColor = "rgb(68, 68, 161)";
+    firstButt.style.backgroundColor = "#2962FF";
     firstButt.style.color = "rgb(234, 234, 255)";
     firstButt.style.height = "60px"
 
@@ -76,7 +76,7 @@ function handleHomeButton() {
 
     deleteHistorySection();
 
-    homeBtn.style.backgroundColor = "rgb(68, 68, 161)";
+    homeBtn.style.backgroundColor = "#2962FF";
     homeBtn.style.color = "rgb(234, 234, 255)";
     homeBtn.style.height = "60px";
 
@@ -96,7 +96,7 @@ function handlePersonalInfoButton(){
 
     deleteHistorySection();
 
-    personalInfoButt.style.backgroundColor = "rgb(68, 68, 161)";
+    personalInfoButt.style.backgroundColor = "#2962FF";
     personalInfoButt.style.color = "rgb(234, 234, 255)";
     personalInfoButt.style.height = "60px";
 

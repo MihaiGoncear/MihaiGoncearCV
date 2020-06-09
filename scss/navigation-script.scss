@@ -18,7 +18,7 @@
     width: 100%;
     p{
         cursor: pointer;
-        background-color: rgb(166, 166, 223);
+        background-color: rgb(33, 149, 243);
         border: black 1px solid;
         border-bottom: 0;
         width: 20%;
@@ -30,9 +30,12 @@
         align-items: center;
         justify-content: center;
         height: 50px;
+        i{
+            font-size: 1.5vw;
+        }
         &:hover{
             height: 60px;
-            background-color: rgb(87, 87, 211);
+            background-color: #2979FF;
             color: rgb(234, 234, 255);
         }
     }
@@ -42,7 +45,7 @@
 
 .navigation-skills-style{
     cursor: pointer;
-    background-color:#a6a6df;
+    background-color:rgb(33, 149, 243);
     border: black 1px solid;
     border-bottom: 0;
     padding: 2%;
@@ -55,7 +58,7 @@
     justify-content: center;
     height: 50px;
     &:hover{
-        background-color: rgb(87, 87, 211);
+        background-color: #2979FF;
         color: rgb(234, 234, 255);
         height: 60px;
     }
