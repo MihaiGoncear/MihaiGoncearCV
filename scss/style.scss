@@ -32,63 +32,81 @@
 }
 
 .personal-information-items {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-content: center;
-   
-    .info-item{
-        line-height: 3;
-        margin-top: 5%;
-        h2 {
-            text-align: center;
+
+    .skill-titles{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 3%;
+        background-color: rgb(21, 101, 192);
+        .digital-skills-title, .foreign-languages-title{
+            padding-left: 10%;
             font-size: 2vw;
         }
     }
 
-    .digital-skills {
+    .skill-tables {
         display: flex;
-        flex-wrap: wrap;
-        margin: 0 15%;
-        
-        li {
-            list-style: none;
-            flex: 0 0 33.33333333%;
-            text-align: center;
-            padding: 4%;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;      
+        margin: 3% 0;
+        .digital-skills {
 
-            img{
-                width: 3vw;
+            ul{
+            display: flex;
+            flex-wrap: wrap;
+
+                li {
+                    padding: 2% 0;
+                    list-style: none;
+                    flex: 0 0 33.33333333%;
+                    text-align: center;
+        
+                    img{
+                        width: 4vw;
+                    }
+                }
             }
         }
-    }
-        
-    .languages-items {
-        display: flex;
-        justify-content: center;
-        tr {
-            & {
-                :nth-child(1){
-                    vertical-align: middle;
-                    text-align: left;
-                    font-weight: bold;
-                }
-                :nth-child(2){
-                    padding-left: 5px;
-                    .dot {
-                        vertical-align: middle;
-                        height: 25px;
-                        width: 25px;
-                        letter-spacing: 0;
-                        background-color: #bbb;
-                        border-radius: 50%;
-                        display: inline-block;
+            
+        .languages-items {
+
+            tr {
+                td{
+                    
+                padding: 2% 0;
+                    span{
+                        font-size: 0.7vw;
                     }
-                    .dot-green {
-                        background-color: rgb(152, 230, 152);
-                    } 
-                    .dot-red {
-                        background-color: rgb(230, 152, 152);
+                }
+
+                & {
+                    :nth-child(1){
+                        vertical-align: middle;
+                        text-align: left;
+                        font-weight: bold;
+                    }
+
+                    :nth-child(2){
+                        padding-left: 10px;
+
+                        .dot {
+                            vertical-align: middle;
+                            height: 2.5vw;
+                            width: 2.5vw;
+                            background-color: #bbb;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+
+                        .dot-green {
+                            background-color: rgb(152, 230, 152);
+                        } 
+
+                        .dot-red {
+                            background-color: rgb(230, 152, 152);
+                        }
                     }
                 }
             }
@@ -101,13 +119,14 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     .name-surname {
-        background-color: rgba(21, 101, 192, 0.700);
+        background-color: rgb(21, 101, 192);
         letter-spacing: 2px;
         text-align: center;
         padding: 1%;
         p{
             color: #BBDEFB;
             font-size: 4vw;
+            font-variant: small-caps;
         }
     }
     .contact-info{
@@ -317,6 +336,7 @@
     background-image: radial-gradient(#BBDEFB, #42A5F5 );
     top: 0;
     height: 100%;
+    padding: 0 2%;
 }
 
 
@@ -349,12 +369,7 @@
     .languages-items {
         tr {
             font-size: 1.3vw;
-            line-height: 1.5;
-            height: 1vh;
-            
-            td {
-                padding: 2% 0;
-            }
+
         }
     }
 
