@@ -133,3 +133,25 @@ function deleteHistorySection(){
     experience.style.height = "";
     experience.classList.add('navigation-skills-style');
 }
+
+//Sript for the languages menu on the top 
+
+let menuSimbolDiv = document.getElementById('menu-simbol-div');
+let flagMenu = document.getElementById('flag-menu');
+let menuSimbol = document.getElementById('menu-simbol');
+let languagesMenu = document.getElementById('languages-menu');
+
+menuSimbolDiv.onmousedown = revealLanguages;
+languagesMenu.onmouseleave = hideLanguages;
+
+function revealLanguages() {
+    flagMenu.classList.remove('hidden');
+    menuSimbolDiv.style.borderRadius = '15px 0 0 15px';
+    menuSimbol.style.transform = "rotate(90deg)"
+};
+
+function hideLanguages() {
+    flagMenu.classList.add('hidden');
+    menuSimbolDiv.style.borderRadius = '15px';
+    menuSimbol.style.transform = ""
+}

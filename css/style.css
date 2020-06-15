@@ -73,27 +73,56 @@ body {
     color: #eaeaff;
     height: 60px; }
 
-.head {
+.head h1 {
+  text-align: center;
   width: 100%;
-  text-align: center; }
-  .head h1 {
-    font-weight: bold;
-    font-family: 'Satisfy', cursive;
-    font-style: italic;
-    color: #aee5ff;
-    background-color: rgba(21, 101, 192, 0.7);
-    font-size: 4vw; }
-  .head .flag {
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  font-style: italic;
+  color: #aee5ff;
+  background-color: rgba(21, 101, 192, 0.7);
+  font-size: 4vw; }
+
+.head .languages-menu {
+  margin-left: 10%;
+  display: flex;
+  margin: 10px 0 10px 10%; }
+  .head .languages-menu .menu-simbol {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    margin-left: 10%; }
-    .head .flag a {
-      text-decoration: none; }
-    .head .flag img {
-      margin: 2vw 1vw 0vw 0vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.616);
+    padding: 0 1%;
+    border: black 1px solid;
+    border-radius: 15px;
+    width: 3vw;
+    height: 3vw; }
+    .head .languages-menu .menu-simbol:hover {
+      background-color: gray; }
+    .head .languages-menu .menu-simbol i {
+      font-size: 2vw; }
+  .head .languages-menu .flag {
+    background-color: rgba(128, 128, 128, 0.384);
+    border: black 1px solid;
+    width: 125%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    height: 100%; }
+    .head .languages-menu .flag a {
+      text-decoration: none;
+      display: flex;
+      margin: 0 3%;
+      border-radius: 25px; }
+      .head .languages-menu .flag a:hover {
+        box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671); }
+    .head .languages-menu .flag img {
       width: 2vw;
       height: 2vw; }
+      .head .languages-menu .flag img:hover {
+        width: 2.5vw;
+        height: 2.5vw; }
 
 .personal-information-items .skill-titles {
   display: flex;
@@ -104,7 +133,8 @@ body {
   background-color: #1565c0; }
   .personal-information-items .skill-titles .digital-skills-title, .personal-information-items .skill-titles .foreign-languages-title {
     padding-left: 10%;
-    font-size: 2vw; }
+    font-size: 2vw;
+    font-weight: bold; }
 
 .personal-information-items .skill-tables {
   display: flex;
@@ -127,8 +157,7 @@ body {
       font-size: 0.7vw; }
   .personal-information-items .skill-tables .languages-items tr :nth-child(1) {
     vertical-align: middle;
-    text-align: left;
-    font-weight: bold; }
+    text-align: left; }
   .personal-information-items .skill-tables .languages-items tr :nth-child(2) {
     padding-left: 10px; }
     .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
@@ -162,7 +191,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center; }
     .name .contact-info .my-profile-photo {
-      width: 50%;
+      width: 40%;
       display: flex;
       justify-content: center; }
       .name .contact-info .my-profile-photo img {
@@ -170,7 +199,7 @@ body {
     .name .contact-info .contact-items {
       display: flex;
       align-items: center;
-      width: 50%; }
+      width: 60%; }
       .name .contact-info .contact-items table {
         width: 80%; }
         .name .contact-info .contact-items table tr {

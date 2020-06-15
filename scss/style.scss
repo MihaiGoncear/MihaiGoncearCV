@@ -3,9 +3,9 @@
 @import "navigation-script";
 
 .head {
-    width: 100%;
-    text-align: center;
     h1 {
+        text-align: center;
+        width: 100%;
         font-weight: bold;
         font-family: 'Satisfy', cursive;
         font-style: italic;
@@ -13,22 +13,57 @@
         background-color: rgba(21, 101, 192, 0.700);
         font-size: 4vw;
     }
-    .flag {
-        display: flex;
-        flex-flow: row nowrap; 
-        justify-content: flex-start;
+    .languages-menu {
         margin-left: 10%;
-
-        a {
-            text-decoration: none;
-        }   
-
-        img {
-            margin: 2vw 1vw 0vw 0vw;
-            width: 2vw;
-            height: 2vw;
+        display: flex;
+        margin: 10px 0 10px 10%;
+        .menu-simbol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.616);
+            padding: 0 1%;
+            border: black 1px solid;
+            border-radius: 15px;
+            width: 3vw;
+            height: 3vw;
+            &:hover {
+                background-color: rgb(128, 128, 128);
+            }
+            i {
+                font-size: 2vw;                
+            }
         }
-    }
+        
+        .flag {
+            background-color: rgba(128, 128, 128, 0.384);
+            border: black 1px solid;
+            width: 125%;
+            display: flex;
+            align-items: center;
+            border-radius: 0 15px 15px 0;
+            height: 100%;
+            a {
+                text-decoration: none;
+                display: flex;
+                margin: 0 3%;
+                border-radius: 25px;
+                &:hover {
+                    box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
+                }
+            }   
+    
+            img {
+                width: 2vw;
+                height: 2vw;
+                &:hover{
+                    width: 2.5vw;
+                    height: 2.5vw;
+                }
+            }
+        }
+    }  
 }
 
 .personal-information-items {
@@ -43,6 +78,7 @@
         .digital-skills-title, .foreign-languages-title{
             padding-left: 10%;
             font-size: 2vw;
+            font-weight: bold;
         }
     }
 
@@ -51,6 +87,7 @@
         flex-flow: row nowrap;
         justify-content: space-evenly;      
         margin: 3% 0;
+
         .digital-skills {
 
             ul{
@@ -85,7 +122,6 @@
                     :nth-child(1){
                         vertical-align: middle;
                         text-align: left;
-                        font-weight: bold;
                     }
 
                     :nth-child(2){
@@ -136,7 +172,7 @@
         justify-content: center;
 
         .my-profile-photo{
-            width: 50%;
+            width: 40%;
             display: flex;
             justify-content: center;
             img {
@@ -147,7 +183,7 @@
         .contact-items{
             display: flex;
             align-items: center;
-            width: 50%;
+            width: 60%;
             table {
                 width: 80%;
                 tr {
@@ -331,7 +367,6 @@
 .table1, .location {
     backface-visibility: hidden;
     position: absolute;
-    //background-image: radial-gradient(#42A5F5 80%, #BBDEFB 10%);
     background-image: radial-gradient(#BBDEFB, #42A5F5 );
     top: 0;
     height: 100%;
