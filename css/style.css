@@ -113,16 +113,16 @@ body {
     .head .languages-menu .flag a {
       text-decoration: none;
       display: flex;
-      margin: 0 3%;
+      padding: 0 3%;
       border-radius: 25px; }
-      .head .languages-menu .flag a:hover {
-        box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671); }
+      .head .languages-menu .flag a:hover img {
+        width: 2.5vw;
+        height: 2.5vw;
+        box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
+        border-radius: 25px; }
     .head .languages-menu .flag img {
       width: 2vw;
       height: 2vw; }
-      .head .languages-menu .flag img:hover {
-        width: 2.5vw;
-        height: 2.5vw; }
 
 .personal-information-items .skill-titles {
   display: flex;
