@@ -262,23 +262,6 @@
     border-radius: 15px;
     tr {
         line-height: 2;
-        & {
-            :nth-child(1) {
-                width: 25%;
-                text-align: left;
-                font-weight: bold;
-            }
-            :nth-child(2) {
-                width: 50%;
-                text-align: center;
-                padding-left: 1,5%;
-                font-style: italic;
-            }
-            :nth-child(3) {
-                width: 25%;
-                text-align: right;
-            }
-        }
     }
 }
 .location {
