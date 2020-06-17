@@ -1,0 +1,210 @@
+@import "mixin";
+
+@include isDesktop {
+    @import "navigation-script";
+
+    .head {
+        h1 {
+            font-size: 4vw;
+        }
+        .languages-menu {
+            margin: 10px 0 10px 10%;
+            .menu-simbol {
+                width: 3vw;
+                height: 3vw;
+                i {
+                    font-size: 2vw;                
+                }
+            }
+            
+            .flag {
+                a {
+                    &:hover {
+                        
+                        img {
+                            width: 2.5vw;
+                            height: 2.5vw;
+                            box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
+                            border-radius: 25px;
+                        }
+                    }
+                }   
+        
+                img {
+                    width: 2vw;
+                    height: 2vw;
+                   
+                }
+            }
+        }  
+    }
+    
+    .name {
+        .contact-info{
+            flex-flow: row nowrap;
+    
+            .my-profile-photo{
+                width: 40%;
+                img {
+                    width: 40%;
+                } 
+            }
+    
+            .contact-items{
+                align-items: center;
+                width: 60%;
+                table {
+                    width: 80%;
+                    tr {
+                        font-size: 1.3vw;
+                        line-height: 1.5;
+                        & {
+                            :nth-child(1) {
+                                font-size: 1.5vw;
+                            }
+                            :nth-child(2) {
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    
+        .social-media {
+            ul {
+                li {
+                    font-size: 1.7vw;
+                    a {
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                }
+            }
+        }        
+    }
+
+    .personal-information-items {
+    
+        .skill-titles{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 3%;
+            background-color: rgb(21, 101, 192);
+            .digital-skills-title, .foreign-languages-title{
+                padding-left: 10%;
+                font-size: 2vw;
+                font-weight: bold;
+            }
+        }
+    
+        .skill-tables {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;      
+            margin: 3% 0;
+    
+            .digital-skills {
+    
+                ul{
+                display: flex;
+                flex-wrap: wrap;
+    
+                    li {
+                        padding: 2% 0;
+                        list-style: none;
+                        flex: 0 0 33.33333333%;
+                        text-align: center;
+            
+                        img{
+                            width: 4vw;
+                        }
+                    }
+                }
+            }
+                
+            .languages-items {
+    
+                tr {
+                    font-size: 1.3vw;
+                    
+                    td{
+                        
+                    padding: 2% 0;
+                        span{
+                            font-size: 0.7vw;
+                        }
+                    }
+    
+                    & {
+                        :nth-child(1){
+                            vertical-align: middle;
+                            text-align: left;
+                        }
+    
+                        :nth-child(2){
+                            padding-left: 10px;
+    
+                            .dot {
+                                vertical-align: middle;
+                                height: 2.5vw;
+                                width: 2.5vw;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+    
+                            .dot-green {
+                                background-color: rgb(152, 230, 152);
+                            } 
+    
+                            .dot-red {
+                                background-color: rgb(230, 152, 152);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .section2 {
+        width: 80%;
+        border-radius: 0 0 10px 10px;
+        margin-left: 10%;
+    
+        a {
+            text-decoration: none;
+            color: black;
+        
+            &:hover {
+            border-bottom-style: solid;
+            color: rgb(255, 0, 0);
+            }
+        }
+    }
+    
+    .table1 {
+        tr {
+            font-size: 1.6vw;
+        }
+    }
+    .location {
+        h2{
+            font-size: 2.2vw;
+        }
+        h3 {
+            font-size: 1.7vw;
+        }
+    }
+    
+    .full-table-container{ 
+        margin: 5% 0;
+        width: 80%;
+        margin-left: 10%;
+        perspective: 1000px;
+        height: 14vw;
+    }
+ }

@@ -17,29 +17,161 @@ body {
   --name-color: rgb(204, 222, 255);
   --main-font-family: 'Gentium Basic', serif; }
 
-.navigation {
-  width: 80%;
-  margin-left: 10%;
-  font-family: 'Archivo', sans-serif;
-  margin-top: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  .head h1 {
+    font-size: 8vw; }
+  .head .languages-menu {
+    margin: 10px 0 10px 2%; }
+    .head .languages-menu .menu-simbol {
+      width: 6vw;
+      height: 6vw; }
+      .head .languages-menu .menu-simbol i {
+        font-size: 3vw; }
+    .head .languages-menu .flag img {
+      width: 5vw;
+      height: 5vw; }
+  .name .name-surname {
+    border-radius: 10px 10px 0 0; }
+  .name .contact-info {
+    flex-flow: column nowrap;
+    align-items: center; }
+    .name .contact-info .my-profile-photo {
+      width: 50%;
+      margin-bottom: 5%; }
+      .name .contact-info .my-profile-photo img {
+        width: 60%; }
+    .name .contact-info .contact-items {
+      align-content: center;
+      justify-content: center;
+      width: 80%; }
+      .name .contact-info .contact-items table {
+        width: 90%;
+        border-spacing: 10px; }
+        .name .contact-info .contact-items table tr {
+          line-height: 2; }
+          .name .contact-info .contact-items table tr :nth-child(1) {
+            font-size: 2.5vw; }
+          .name .contact-info .contact-items table tr :nth-child(2) {
+            font-size: 3vw; }
+  .name .social-media ul li {
+    font-size: 3.5vw; }
+    .name .social-media ul li a {
+      width: 5.5vw;
+      height: 5.5vw; }
+  .personal-information-items .skill-titles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3%;
+    background-color: #1565c0; }
+    .personal-information-items .skill-titles .digital-skills-title, .personal-information-items .skill-titles .foreign-languages-title {
+      padding-left: 10%;
+      font-size: 2vw;
+      font-weight: bold; }
+  .personal-information-items .skill-tables {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 3% 0; }
+    .personal-information-items .skill-tables .digital-skills ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .personal-information-items .skill-tables .digital-skills ul li {
+        padding: 2% 0;
+        list-style: none;
+        flex: 0 0 33.33333333%;
+        text-align: center; }
+        .personal-information-items .skill-tables .digital-skills ul li img {
+          width: 4vw; }
+    .personal-information-items .skill-tables .languages-items tr {
+      font-size: 1.3vw; }
+      .personal-information-items .skill-tables .languages-items tr td {
+        padding: 2% 0; }
+        .personal-information-items .skill-tables .languages-items tr td span {
+          font-size: 0.7vw; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(1) {
+        vertical-align: middle;
+        text-align: left; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(2) {
+        padding-left: 10px; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
+          vertical-align: middle;
+          height: 2.5vw;
+          width: 2.5vw;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-green {
+          background-color: #98e698; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-red {
+          background-color: #e69898; }
+  .section2 {
+    width: 96%;
+    border-radius: 10px;
+    margin-left: 2%; }
+    .section2 a {
+      text-decoration: none;
+      color: black; }
+      .section2 a:hover {
+        border-bottom-style: solid;
+        color: red; }
+  .table1 tr {
+    font-size: 2.5vw; }
+  .location h2 {
+    font-size: 3.5vw; }
+  .location h3 {
+    font-size: 2.5vw; }
+  .full-table-container {
+    margin: 5% 0;
+    width: 90%;
+    margin-left: 5%;
+    perspective: 1000px;
+    height: 20vw; } }
 
-.main-card {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  width: 100%; }
-  .main-card p {
-    margin: 0;
+@media screen and (min-width: 769px) {
+  .navigation {
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Archivo', sans-serif;
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .main-card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    width: 100%; }
+    .main-card p {
+      margin: 0;
+      cursor: pointer;
+      background-color: #2195f3;
+      border: black 1px solid;
+      border-bottom: 0;
+      width: 20%;
+      padding: 2%;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+      font-size: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px; }
+      .main-card p i {
+        font-size: 1.5vw; }
+      .main-card p:hover {
+        height: 60px;
+        background-color: #2979FF;
+        color: #eaeaff; }
+  .navigation-skills-style {
     cursor: pointer;
     background-color: #2195f3;
     border: black 1px solid;
     border-bottom: 0;
-    width: 20%;
     padding: 2%;
+    width: 20%;
     text-align: center;
     border-radius: 10px 10px 0 0;
     font-size: 1vw;
@@ -47,31 +179,120 @@ body {
     align-items: center;
     justify-content: center;
     height: 50px; }
-    .main-card p i {
-      font-size: 1.5vw; }
-    .main-card p:hover {
-      height: 60px;
+    .navigation-skills-style:hover {
       background-color: #2979FF;
-      color: #eaeaff; }
-
-.navigation-skills-style {
-  cursor: pointer;
-  background-color: #2195f3;
-  border: black 1px solid;
-  border-bottom: 0;
-  padding: 2%;
-  width: 20%;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
-  font-size: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px; }
-  .navigation-skills-style:hover {
-    background-color: #2979FF;
-    color: #eaeaff;
-    height: 60px; }
+      color: #eaeaff;
+      height: 60px; }
+  .head h1 {
+    font-size: 4vw; }
+  .head .languages-menu {
+    margin: 10px 0 10px 10%; }
+    .head .languages-menu .menu-simbol {
+      width: 3vw;
+      height: 3vw; }
+      .head .languages-menu .menu-simbol i {
+        font-size: 2vw; }
+    .head .languages-menu .flag a:hover img {
+      width: 2.5vw;
+      height: 2.5vw;
+      box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
+      border-radius: 25px; }
+    .head .languages-menu .flag img {
+      width: 2vw;
+      height: 2vw; }
+  .name .contact-info {
+    flex-flow: row nowrap; }
+    .name .contact-info .my-profile-photo {
+      width: 40%; }
+      .name .contact-info .my-profile-photo img {
+        width: 40%; }
+    .name .contact-info .contact-items {
+      align-items: center;
+      width: 60%; }
+      .name .contact-info .contact-items table {
+        width: 80%; }
+        .name .contact-info .contact-items table tr {
+          font-size: 1.3vw;
+          line-height: 1.5; }
+          .name .contact-info .contact-items table tr :nth-child(1) {
+            font-size: 1.5vw; }
+          .name .contact-info .contact-items table tr :nth-child(2) {
+            border-radius: 10px; }
+  .name .social-media ul li {
+    font-size: 1.7vw; }
+    .name .social-media ul li a {
+      width: 3vw;
+      height: 3vw; }
+  .personal-information-items .skill-titles {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3%;
+    background-color: #1565c0; }
+    .personal-information-items .skill-titles .digital-skills-title, .personal-information-items .skill-titles .foreign-languages-title {
+      padding-left: 10%;
+      font-size: 2vw;
+      font-weight: bold; }
+  .personal-information-items .skill-tables {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 3% 0; }
+    .personal-information-items .skill-tables .digital-skills ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .personal-information-items .skill-tables .digital-skills ul li {
+        padding: 2% 0;
+        list-style: none;
+        flex: 0 0 33.33333333%;
+        text-align: center; }
+        .personal-information-items .skill-tables .digital-skills ul li img {
+          width: 4vw; }
+    .personal-information-items .skill-tables .languages-items tr {
+      font-size: 1.3vw; }
+      .personal-information-items .skill-tables .languages-items tr td {
+        padding: 2% 0; }
+        .personal-information-items .skill-tables .languages-items tr td span {
+          font-size: 0.7vw; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(1) {
+        vertical-align: middle;
+        text-align: left; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(2) {
+        padding-left: 10px; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
+          vertical-align: middle;
+          height: 2.5vw;
+          width: 2.5vw;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-green {
+          background-color: #98e698; }
+        .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-red {
+          background-color: #e69898; }
+  .section2 {
+    width: 80%;
+    border-radius: 0 0 10px 10px;
+    margin-left: 10%; }
+    .section2 a {
+      text-decoration: none;
+      color: black; }
+      .section2 a:hover {
+        border-bottom-style: solid;
+        color: red; }
+  .table1 tr {
+    font-size: 1.6vw; }
+  .location h2 {
+    font-size: 2.2vw; }
+  .location h3 {
+    font-size: 1.7vw; }
+  .full-table-container {
+    margin: 5% 0;
+    width: 80%;
+    margin-left: 10%;
+    perspective: 1000px;
+    height: 14vw; } }
 
 .head h1 {
   text-align: center;
@@ -80,13 +301,10 @@ body {
   font-family: 'Satisfy', cursive;
   font-style: italic;
   color: #aee5ff;
-  background-color: rgba(21, 101, 192, 0.7);
-  font-size: 4vw; }
+  background-color: rgba(21, 101, 192, 0.7); }
 
 .head .languages-menu {
-  margin-left: 10%;
-  display: flex;
-  margin: 10px 0 10px 10%; }
+  display: flex; }
   .head .languages-menu .menu-simbol {
     display: flex;
     justify-content: center;
@@ -95,13 +313,9 @@ body {
     background-color: rgba(128, 128, 128, 0.616);
     padding: 0 1%;
     border: black 1px solid;
-    border-radius: 15px;
-    width: 3vw;
-    height: 3vw; }
+    border-radius: 15px; }
     .head .languages-menu .menu-simbol:hover {
       background-color: gray; }
-    .head .languages-menu .menu-simbol i {
-      font-size: 2vw; }
   .head .languages-menu .flag {
     background-color: rgba(128, 128, 128, 0.384);
     border: black 1px solid;
@@ -115,14 +329,80 @@ body {
       display: flex;
       padding: 0 3%;
       border-radius: 25px; }
-      .head .languages-menu .flag a:hover img {
-        width: 2.5vw;
-        height: 2.5vw;
-        box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
-        border-radius: 25px; }
-    .head .languages-menu .flag img {
-      width: 2vw;
-      height: 2vw; }
+
+.name {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+  .name .name-surname {
+    background-color: #1565c0;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 1%; }
+    .name .name-surname p {
+      color: #BBDEFB;
+      font-size: 4vw;
+      font-variant: small-caps; }
+  .name .contact-info {
+    padding: 3%;
+    display: flex;
+    justify-content: center; }
+    .name .contact-info .my-profile-photo {
+      width: 50%;
+      display: flex;
+      justify-content: center; }
+    .name .contact-info .contact-items {
+      display: flex; }
+      .name .contact-info .contact-items table tr {
+        height: 1vh; }
+        .name .contact-info .contact-items table tr :nth-child(1) {
+          text-align: center; }
+        .name .contact-info .contact-items table tr :nth-child(2) {
+          background-color: rgba(33, 149, 243, 0.85);
+          padding-left: 5px;
+          border-radius: 10px; }
+  .name .social-media {
+    padding: 2%;
+    background-color: rgba(21, 101, 192, 0.7);
+    border-radius: 10px; }
+    .name .social-media ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row; }
+      .name .social-media ul li {
+        list-style: none; }
+        .name .social-media ul li a {
+          display: block;
+          text-align: center;
+          margin: 0 10px;
+          border-radius: 5px;
+          box-sizing: border-box;
+          text-decoration: none;
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+          background: linear-gradient(0deg, #ddd, #fff);
+          transition: .5s; }
+          .name .social-media ul li a:hover {
+            box-shadow: 0 2px 5px rgba(255, 0, 0, 0.548); }
+          .name .social-media ul li a .fa {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, #fff, #ddd);
+            border-radius: 5px;
+            line-height: calc(60px - 12px);
+            color: #7894b4;
+            transition: .5s; }
+    .name .social-media ul li:nth-child(1) a:hover .fa {
+      color: #3b5998; }
+    .name .social-media ul li:nth-child(2) a:hover .fa {
+      color: #00aced; }
+    .name .social-media ul li:nth-child(3) a:hover .fa {
+      color: #f56200; }
+    .name .social-media ul li:nth-child(4) a:hover .fa {
+      color: #c81cce; }
 
 .personal-information-items .skill-titles {
   display: flex;
@@ -151,120 +431,34 @@ body {
       text-align: center; }
       .personal-information-items .skill-tables .digital-skills ul li img {
         width: 4vw; }
-  .personal-information-items .skill-tables .languages-items tr td {
-    padding: 2% 0; }
-    .personal-information-items .skill-tables .languages-items tr td span {
-      font-size: 0.7vw; }
-  .personal-information-items .skill-tables .languages-items tr :nth-child(1) {
-    vertical-align: middle;
-    text-align: left; }
-  .personal-information-items .skill-tables .languages-items tr :nth-child(2) {
-    padding-left: 10px; }
-    .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
+  .personal-information-items .skill-tables .languages-items tr {
+    font-size: 1.3vw; }
+    .personal-information-items .skill-tables .languages-items tr td {
+      padding: 2% 0; }
+      .personal-information-items .skill-tables .languages-items tr td span {
+        font-size: 0.7vw; }
+    .personal-information-items .skill-tables .languages-items tr :nth-child(1) {
       vertical-align: middle;
-      height: 2.5vw;
-      width: 2.5vw;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block; }
-    .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-green {
-      background-color: #98e698; }
-    .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-red {
-      background-color: #e69898; }
-
-.name {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between; }
-  .name .name-surname {
-    background-color: #1565c0;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 1%; }
-    .name .name-surname p {
-      color: #BBDEFB;
-      font-size: 4vw;
-      font-variant: small-caps; }
-  .name .contact-info {
-    padding: 3%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center; }
-    .name .contact-info .my-profile-photo {
-      width: 40%;
-      display: flex;
-      justify-content: center; }
-      .name .contact-info .my-profile-photo img {
-        width: 40%; }
-    .name .contact-info .contact-items {
-      display: flex;
-      align-items: center;
-      width: 60%; }
-      .name .contact-info .contact-items table {
-        width: 80%; }
-        .name .contact-info .contact-items table tr {
-          line-height: 1.5; }
-          .name .contact-info .contact-items table tr :nth-child(1) {
-            text-align: center;
-            font-size: 1.5vw; }
-          .name .contact-info .contact-items table tr :nth-child(2) {
-            background-color: rgba(33, 149, 243, 0.85);
-            padding-left: 5px;
-            border-radius: 10px; }
-  .name .social-media {
-    padding: 2%;
-    background-color: rgba(21, 101, 192, 0.7);
-    border-radius: 10px; }
-    .name .social-media ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row; }
-      .name .social-media ul li {
-        list-style: none;
-        font-size: 1.7vw; }
-        .name .social-media ul li a {
-          display: block;
-          text-align: center;
-          margin: 0 10px;
-          border-radius: 5px;
-          box-sizing: border-box;
-          text-decoration: none;
-          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-          background: linear-gradient(0deg, #ddd, #fff);
-          transition: .5s;
-          width: 3vw;
-          height: 3vw; }
-          .name .social-media ul li a:hover {
-            box-shadow: 0 2px 5px rgba(255, 0, 0, 0.548); }
-          .name .social-media ul li a .fa {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(0deg, #fff, #ddd);
-            border-radius: 5px;
-            line-height: calc(60px - 12px);
-            color: #7894b4;
-            transition: .5s; }
-    .name .social-media ul li:nth-child(1) a:hover .fa {
-      color: #3b5998; }
-    .name .social-media ul li:nth-child(2) a:hover .fa {
-      color: #00aced; }
-    .name .social-media ul li:nth-child(3) a:hover .fa {
-      color: #f56200; }
-    .name .social-media ul li:nth-child(4) a:hover .fa {
-      color: #c81cce; }
+      text-align: left; }
+    .personal-information-items .skill-tables .languages-items tr :nth-child(2) {
+      padding-left: 10px; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
+        vertical-align: middle;
+        height: 2.5vw;
+        width: 2.5vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-green {
+        background-color: #98e698; }
+      .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot-red {
+        background-color: #e69898; }
 
 .section2 {
   margin-bottom: 10%;
   background-color: rgba(25, 118, 210, 0.801);
   border: 1px solid black;
-  border-collapse: collapse;
-  width: 80%;
-  border-radius: 0 0 10px 10px;
-  margin-left: 10%; }
+  border-collapse: collapse; }
   .section2 a {
     text-decoration: none;
     color: black; }
@@ -273,13 +467,11 @@ body {
       color: red; }
 
 .table1 {
-  font-size: 24px;
   width: 100%;
   padding: 0 5%;
   border-radius: 15px; }
   .table1 tr {
-    line-height: 2;
-    font-size: 1.6vw; }
+    line-height: 2; }
     .table1 tr :nth-child(1) {
       width: 25%;
       text-align: left;
@@ -301,10 +493,7 @@ body {
   transform: rotateY(180deg);
   width: 100%;
   border-radius: 15px; }
-  .location h2 {
-    font-size: 2.2vw; }
   .location h3 {
-    font-size: 1.7vw;
     font-weight: lighter; }
 
 .table-container {
@@ -322,12 +511,8 @@ body {
     border: 0; }
 
 .full-table-container {
-  margin: 5% 0;
   background-color: transparent;
-  width: 80%;
-  margin-left: 10%;
-  perspective: 1000px;
-  height: 26vh; }
+  perspective: 1000px; }
 
 .full-table-container:hover .table-container {
   transform: rotateY(180deg); }
@@ -342,89 +527,3 @@ body {
 
 .hidden {
   display: none; }
-
-/*//////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////*/
-@media screen and (min-width: 769px) {
-  .contact-items tr {
-    font-size: 1.3vw;
-    line-height: 1vw;
-    height: 1vh; }
-    .contact-items tr td {
-      padding: 2% 0; }
-  .languages-items tr {
-    font-size: 1.3vw; } }
-
-/*//////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////*/
-@media screen and (min-width: 100px) and (max-width: 768px) {
-  #full-container {
-    flex-flow: column wrap; }
-  .head {
-    flex-flow: column wrap;
-    width: 100%; }
-    .head h1 {
-      text-align: center; }
-    .head .flag {
-      justify-content: space-between;
-      margin-left: 2%;
-      width: 100%; }
-      .head .flag img {
-        width: 6vw;
-        height: 6vw; }
-  .section1 {
-    margin: 0 2%;
-    width: 100%; }
-    .section1 h2 {
-      font-size: 6vw; }
-  .name .h1 {
-    padding-left: 10%;
-    font-size: 8vw;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: center;
-    padding-left: 20%; }
-  .table2 {
-    padding-left: 3%; }
-    .table2 tr {
-      font-size: 5vw; }
-      .table2 tr td {
-        padding: 2vw 0; }
-      .table2 tr :nth-child(1) {
-        line-height: 5.5vw; }
-  .table3 {
-    width: 100%;
-    margin-left: 3%; }
-    .table3 tr {
-      font-size: 4.5vw; }
-      .table3 tr td {
-        padding: 2vw 0; }
-  .social-media ul li a {
-    width: 8vw;
-    height: 8vw;
-    margin-bottom: 3vw; }
-    .social-media ul li a .fa {
-      font-size: 5vw; }
-  .digital-skills {
-    margin: 0 15%; }
-    .digital-skills img {
-      height: 8vw;
-      margin: 0 3vw 3vw 3vw; }
-  .section2 {
-    margin: 0 2%;
-    width: 100%; }
-  dd {
-    padding-left: 2%; }
-  .table1 tr {
-    font-size: 3vw; }
-    .table1 tr :nth-child(1) {
-      line-height: 3vw; }
-    .table1 tr :nth-child(2) {
-      line-height: 3.5vw; }
-  .table-container h2 {
-    font-size: 3.5vw; }
-  .table-container h3 {
-    font-size: 3vw; } }

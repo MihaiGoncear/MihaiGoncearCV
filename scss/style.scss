@@ -1,6 +1,6 @@
 @import "reset";
-@import "mixin";
-@import "navigation-script";
+@import "telephone";
+@import "desktop";
 
 .head {
     h1 {
@@ -11,12 +11,9 @@
         font-style: italic;
         color: rgb(174, 229, 255);
         background-color: rgba(21, 101, 192, 0.700);
-        font-size: 4vw;
     }
     .languages-menu {
-        margin-left: 10%;
         display: flex;
-        margin: 10px 0 10px 10%;
         .menu-simbol {
             display: flex;
             justify-content: center;
@@ -26,13 +23,8 @@
             padding: 0 1%;
             border: black 1px solid;
             border-radius: 15px;
-            width: 3vw;
-            height: 3vw;
             &:hover {
                 background-color: rgb(128, 128, 128);
-            }
-            i {
-                font-size: 2vw;                
             }
         }
         
@@ -49,108 +41,9 @@
                 display: flex;
                 padding: 0 3%;
                 border-radius: 25px;
-                &:hover {
-                    
-                    img {
-                        width: 2.5vw;
-                        height: 2.5vw;
-                        box-shadow: 0 2px 4px 0 rgba(0, 4, 255, 0.479), 0 3px 10px 0 rgba(0, 4, 255, 0.671);
-                        border-radius: 25px;
-                    }
-                }
             }   
-    
-            img {
-                width: 2vw;
-                height: 2vw;
-               
-            }
         }
     }  
-}
-
-.personal-information-items {
-
-    .skill-titles{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 3%;
-        background-color: rgb(21, 101, 192);
-        .digital-skills-title, .foreign-languages-title{
-            padding-left: 10%;
-            font-size: 2vw;
-            font-weight: bold;
-        }
-    }
-
-    .skill-tables {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;      
-        margin: 3% 0;
-
-        .digital-skills {
-
-            ul{
-            display: flex;
-            flex-wrap: wrap;
-
-                li {
-                    padding: 2% 0;
-                    list-style: none;
-                    flex: 0 0 33.33333333%;
-                    text-align: center;
-        
-                    img{
-                        width: 4vw;
-                    }
-                }
-            }
-        }
-            
-        .languages-items {
-
-            tr {
-                td{
-                    
-                padding: 2% 0;
-                    span{
-                        font-size: 0.7vw;
-                    }
-                }
-
-                & {
-                    :nth-child(1){
-                        vertical-align: middle;
-                        text-align: left;
-                    }
-
-                    :nth-child(2){
-                        padding-left: 10px;
-
-                        .dot {
-                            vertical-align: middle;
-                            height: 2.5vw;
-                            width: 2.5vw;
-                            background-color: #bbb;
-                            border-radius: 50%;
-                            display: inline-block;
-                        }
-
-                        .dot-green {
-                            background-color: rgb(152, 230, 152);
-                        } 
-
-                        .dot-red {
-                            background-color: rgb(230, 152, 152);
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 .name {
@@ -171,30 +64,22 @@
     .contact-info{
         padding: 3%;
         display: flex;
-        flex-flow: row nowrap;
         justify-content: center;
 
         .my-profile-photo{
-            width: 40%;
+            width: 50%;
             display: flex;
             justify-content: center;
-            img {
-                width: 40%;
-            } 
         }
 
         .contact-items{
             display: flex;
-            align-items: center;
-            width: 60%;
             table {
-                width: 80%;
                 tr {
-                    line-height: 1.5;
+                    height: 1vh;
                     & {
                         :nth-child(1) {
                             text-align: center;
-                            font-size: 1.5vw;
                         }
                         :nth-child(2) {
                             background-color: rgba(33, 149, 243, 0.850);
@@ -206,7 +91,6 @@
             }
         }   
     }
-
     .social-media {
         padding: 2%;
         background-color: rgba(21, 101, 192, 0.700);
@@ -217,9 +101,7 @@
             align-items: center;
             flex-flow: row ;
             li {
-                list-style: none;
-                font-size: 1.7vw;
-    
+                list-style: none;    
                 a {
                     display: block;
                     text-align: center;
@@ -229,10 +111,7 @@
                     text-decoration:none;
                     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
                     background: linear-gradient(0deg, #ddd, #fff);
-                    transition: .5s;
-                    width: 3vw;
-                    height: 3vw;
-                    
+                    transition: .5s;                    
     
                     &:hover {
                         box-shadow: 0 2px 5px rgba(255, 0, 0, 0.548);
@@ -257,11 +136,11 @@
     
         ul li:nth-child(1) a:hover .fa {
             color: #3b5998;
-          }
-          
+        }
+        
         ul li:nth-child(2) a:hover .fa {
             color: #00aced;
-          }
+        }
         
         ul li:nth-child(3) a:hover .fa {
             color: rgb(245, 98, 0);
@@ -270,18 +149,102 @@
         ul li:nth-child(4) a:hover .fa {
             color: rgb(200, 28, 206);
         }
-    } 
-           
+    }      
 }
+
+
+    .personal-information-items {
+
+        .skill-titles{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 3%;
+            background-color: rgb(21, 101, 192);
+            .digital-skills-title, .foreign-languages-title{
+                padding-left: 10%;
+                font-size: 2vw;
+                font-weight: bold;
+            }
+        }
+
+        .skill-tables {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;      
+            margin: 3% 0;
+
+            .digital-skills {
+
+                ul{
+                display: flex;
+                flex-wrap: wrap;
+
+                    li {
+                        padding: 2% 0;
+                        list-style: none;
+                        flex: 0 0 33.33333333%;
+                        text-align: center;
+            
+                        img{
+                            width: 4vw;
+                        }
+                    }
+                }
+            }
+                
+            .languages-items {
+
+                tr {
+                    font-size: 1.3vw;
+                    
+                    td{
+                        
+                    padding: 2% 0;
+                        span{
+                            font-size: 0.7vw;
+                        }
+                    }
+
+                    & {
+                        :nth-child(1){
+                            vertical-align: middle;
+                            text-align: left;
+                        }
+
+                        :nth-child(2){
+                            padding-left: 10px;
+
+                            .dot {
+                                vertical-align: middle;
+                                height: 2.5vw;
+                                width: 2.5vw;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+
+                            .dot-green {
+                                background-color: rgb(152, 230, 152);
+                            } 
+
+                            .dot-red {
+                                background-color: rgb(230, 152, 152);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 .section2 {
     margin-bottom: 10%;
     background-color: rgba(25, 118, 210, 0.801);
     border: 1px solid black;
     border-collapse: collapse;
-    width: 80%;
-    border-radius: 0 0 10px 10px;
-    margin-left: 10%;
 
     a {
         text-decoration: none;
@@ -295,13 +258,11 @@
 }
 
 .table1 {
-    font-size: 24px;
     width: 100%;
     padding: 0 5%;
     border-radius: 15px;
     tr {
         line-height: 2;
-        font-size: 1.6vw;
         & {
             :nth-child(1) {
                 width: 25%;
@@ -329,11 +290,8 @@
     transform: rotateY(180deg);
     width: 100%;
     border-radius: 15px;
-    h2{
-        font-size: 2.2vw;
-    }
+
     h3 {
-        font-size: 1.7vw;
         font-weight: lighter;
     }
 }
@@ -355,14 +313,10 @@
     }
 }
 .full-table-container{ 
-    margin: 5% 0;
     background-color: transparent;
-    width: 80%;
-    margin-left: 10%;
     perspective: 1000px;
-    height: 26vh;
-
 }
+
 .full-table-container:hover .table-container{
     transform: rotateY(180deg);
 }
@@ -380,180 +334,3 @@
 .hidden{
     display: none;
 }
-
-/*//////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////*/
-
-
-@include isDesktop {
-    
-
-    .contact-items {
-        
-        
-        tr {
-            font-size: 1.3vw;
-            line-height: 1vw;
-            height: 1vh;
-
-            td {
-                padding: 2% 0;
-            }
-        }
-    }
-
-    .languages-items {
-        tr {
-            font-size: 1.3vw;
-
-        }
-    }
-
-
-
- }
-
-
-/*//////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////*/
-
-
-@include isTelephone {
-    
-    #full-container {
-        flex-flow: column wrap;
-    }
-
-    .head {
-        flex-flow: column wrap;
-        width: 100%;
-        h1 {
-            text-align: center;
-        }
-        .flag {
-            justify-content: space-between;
-            margin-left: 2%;
-            width: 100%;
-            img {
-                width: 6vw;
-                height: 6vw;
-            }
-        }
-    }
-
-    .section1 {
-        margin: 0 2%;
-        width: 100%;
-
-        h2 {
-            font-size: 6vw;
-        }
-    }
-
-    .name {
-    
-        .h1 {
-            padding-left: 10%;
-            font-size: 8vw;
-            display: flex;
-            justify-content: center;
-            flex-flow: column wrap;
-            align-content: center;
-            padding-left: 20%;
-        }
-    }
-
-    .table2 {
-        padding-left: 3%;
-        
-        tr {
-            font-size: 5vw;
-            td {
-                padding: 2vw 0;
-            }
-    
-            & {
-                :nth-child(1) {
-                    line-height: 5.5vw;
-                }
-            }
-        }
-    }
-
-    .table3 {
-        width: 100%;
-        margin-left: 3%;
-        tr {
-            font-size: 4.5vw;
-            
-            td {
-                padding: 2vw 0;
-            }
-        }
-    }
-
-    .social-media {
-        ul {
-            li {
-                a {
-                    width: 8vw;
-                    height: 8vw;
-                    margin-bottom: 3vw;;
-
-                    .fa {
-                        font-size: 5vw;
-                    }
-                }
-            }
-        }
-    }
-
-    .digital-skills {
-        margin: 0 15%;
-        
-        img {
-            height: 8vw;
-            margin: 0 3vw 3vw 3vw;
-        }
-    }
-
-    .section2 {
-        margin: 0 2%;
-        width: 100%;
-    }   
-    
-    dd {
-        padding-left: 2%;
-        }
-    
-    .table1 {
-    
-        tr {
-            font-size: 3vw;
-           
-            & {
-    
-                :nth-child(1) {
-                    line-height: 3vw;
-                }
-    
-                :nth-child(2) {
-                    line-height: 3.5vw;
-                }
-            }    
-        }
-    }
-    
-    .table-container {
-        h2 {
-            font-size: 3.5vw;
-        }
-        h3 {
-            font-size: 3vw;
-        }
-    }
-}
-
-

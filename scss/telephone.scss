@@ -1,0 +1,205 @@
+@import "mixin";
+
+@include isTelephone {
+    
+    .head {
+        h1 {
+            font-size: 8vw;
+        }
+        .languages-menu {
+            margin: 10px 0 10px 2%;
+            .menu-simbol {
+                width: 6vw;
+                height: 6vw;
+                i {
+                    font-size: 3vw;                
+                }
+            }
+            
+            .flag {
+
+                img {
+                    width: 5vw;
+                    height: 5vw;
+                
+                }
+            }
+        }  
+    }
+
+    .name {
+        .name-surname {
+            border-radius: 10px 10px 0 0;
+        }
+        .contact-info{
+            flex-flow: column nowrap;
+            align-items: center;
+
+            .my-profile-photo{
+                width: 50%;
+                margin-bottom: 5%;
+                img {
+                    width: 60%;
+                } 
+            }
+
+            .contact-items{
+                align-content: center;
+                justify-content: center;
+                width: 80%;
+                table {
+                    width: 90%;
+                    border-spacing: 10px;
+                    tr {
+                        line-height: 2;
+
+                        & {
+                            :nth-child(1) {
+                                font-size: 2.5vw;
+                            }
+                            :nth-child(2) {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+        
+        .social-media {
+            ul {
+                li {
+                    font-size: 3.5vw;
+                    a {
+                        width: 5.5vw;
+                        height: 5.5vw;
+                    }
+                }
+            }
+        }        
+    }
+
+    .personal-information-items {
+
+        .skill-titles{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 3%;
+            background-color: rgb(21, 101, 192);
+            .digital-skills-title, .foreign-languages-title{
+                padding-left: 10%;
+                font-size: 2vw;
+                font-weight: bold;
+            }
+        }
+
+        .skill-tables {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;      
+            margin: 3% 0;
+
+            .digital-skills {
+
+                ul{
+                display: flex;
+                flex-wrap: wrap;
+
+                    li {
+                        padding: 2% 0;
+                        list-style: none;
+                        flex: 0 0 33.33333333%;
+                        text-align: center;
+            
+                        img{
+                            width: 4vw;
+                        }
+                    }
+                }
+            }
+                
+            .languages-items {
+
+                tr {
+                    font-size: 1.3vw;
+                    
+                    td{
+                        
+                    padding: 2% 0;
+                        span{
+                            font-size: 0.7vw;
+                        }
+                    }
+
+                    & {
+                        :nth-child(1){
+                            vertical-align: middle;
+                            text-align: left;
+                        }
+
+                        :nth-child(2){
+                            padding-left: 10px;
+
+                            .dot {
+                                vertical-align: middle;
+                                height: 2.5vw;
+                                width: 2.5vw;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+
+                            .dot-green {
+                                background-color: rgb(152, 230, 152);
+                            } 
+
+                            .dot-red {
+                                background-color: rgb(230, 152, 152);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section2 {
+        width: 96%;
+        border-radius: 10px;
+        margin-left: 2%;
+
+        a {
+            text-decoration: none;
+            color: black;
+        
+            &:hover {
+            border-bottom-style: solid;
+            color: rgb(255, 0, 0);
+            }
+        }
+    }
+
+    .table1 {
+        tr {
+            font-size: 2.5vw;
+        }
+    }
+    .location {
+        h2{
+            font-size: 3.5vw;
+        }
+        h3 {
+            font-size: 2.5vw;
+        }
+    }
+
+    .full-table-container{ 
+        margin: 5% 0;
+        width: 90%;
+        margin-left: 5%;
+        perspective: 1000px;
+        height: 20vw;
+    }
+}
