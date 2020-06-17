@@ -23,13 +23,13 @@ body {
   .head .languages-menu {
     margin: 10px 0 10px 2%; }
     .head .languages-menu .menu-simbol {
-      width: 6vw;
-      height: 6vw; }
+      width: 7vw;
+      height: 7vw; }
       .head .languages-menu .menu-simbol i {
-        font-size: 3vw; }
+        font-size: 5vw; }
     .head .languages-menu .flag img {
-      width: 5vw;
-      height: 5vw; }
+      width: 5.5vw;
+      height: 5.5vw; }
   .name .name-surname {
     border-radius: 10px 10px 0 0; }
   .name .contact-info {
