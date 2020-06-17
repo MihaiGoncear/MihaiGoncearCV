@@ -30,6 +30,9 @@
     .name {
         .name-surname {
             border-radius: 10px 10px 0 0;
+            p {
+                font-size: 6vw;
+            }
         }
         .contact-info{
             flex-flow: column nowrap;

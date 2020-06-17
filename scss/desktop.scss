@@ -40,6 +40,12 @@
     }
     
     .name {
+        .name-surname {
+            p {
+                font-size: 4vw;
+            }
+        }
+        
         .contact-info{
             flex-flow: row nowrap;
     

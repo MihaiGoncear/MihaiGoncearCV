@@ -32,6 +32,8 @@ body {
       height: 5.5vw; }
   .name .name-surname {
     border-radius: 10px 10px 0 0; }
+    .name .name-surname p {
+      font-size: 6vw; }
   .name .contact-info {
     flex-flow: column nowrap;
     align-items: center; }
@@ -200,6 +202,8 @@ body {
     .head .languages-menu .flag img {
       width: 2vw;
       height: 2vw; }
+  .name .name-surname p {
+    font-size: 4vw; }
   .name .contact-info {
     flex-flow: row nowrap; }
     .name .contact-info .my-profile-photo {
@@ -341,7 +345,6 @@ body {
     padding: 1%; }
     .name .name-surname p {
       color: #BBDEFB;
-      font-size: 4vw;
       font-variant: small-caps; }
   .name .contact-info {
     padding: 3%;
