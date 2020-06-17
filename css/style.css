@@ -137,11 +137,11 @@ body {
   .location h3 {
     font-size: 2.5vw; }
   .full-table-container {
-    margin: 2.5% 0;
+    margin: 5% 0;
     width: 95%;
-    margin-left: 5%;
+    margin-left: 2.5%;
     perspective: 1000px;
-    height: 22vw; } }
+    height: 23vw; } }
 
 @media screen and (min-width: 769px) {
   .navigation {
