@@ -278,8 +278,8 @@ body {
         padding-left: 10px; }
         .personal-information-items .skill-tables .languages-items tr :nth-child(2) .dot {
           vertical-align: middle;
-          height: 2.5vw;
-          width: 2.5vw;
+          height: 2.2vw;
+          width: 2.2vw;
           background-color: #bbb;
           border-radius: 50%;
           display: inline-block; }
